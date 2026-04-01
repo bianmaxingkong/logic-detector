@@ -2,8 +2,15 @@
   "metadata": {
     "name": "LogicDetector Knowledge Base",
     "version": "1.0",
-    "description": "25+ 常识事实 (地理、物理、生物)",
-    "accuracy": "85%"
+    "description": "100+ 常识事实 (地理、物理、生物、历史、科学)",
+    "accuracy_target": "85%",
+    "categories": {
+      "geography": 20,
+      "physics": 20,
+      "biology": 20,
+      "history": 20,
+      "science": 20
+    }
   },
   "facts": {
     "geography": {
@@ -16,6 +23,18 @@
         "confidence": 0.99,
         "correction": "美国的首都是华盛顿特区"
       },
+      "日本的首都是东京": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "英国的首都是伦敦": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "法国的首都是巴黎": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
       "地球是平的": {
         "truth_value": false,
         "confidence": 0.99,
@@ -24,6 +43,60 @@
       "太平洋是世界上最大的洋": {
         "truth_value": true,
         "confidence": 0.95
+      },
+      "珠穆朗玛峰是世界最高峰": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "尼罗河是世界最长河流": {
+        "truth_value": true,
+        "confidence": 0.95
+      },
+      "澳大利亚是大洋洲国家": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "巴西是南美洲国家": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "埃及在非洲": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "印度在亚洲": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "加拿大在北美洲": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "俄罗斯是欧洲国家": {
+        "truth_value": false,
+        "confidence": 0.90,
+        "correction": "俄罗斯跨欧亚两大洲"
+      },
+      "南极洲无人居住": {
+        "truth_value": false,
+        "confidence": 0.90,
+        "correction": "南极洲有科研人员居住"
+      },
+      "撒哈拉是世界最大沙漠": {
+        "truth_value": true,
+        "confidence": 0.95
+      },
+      "亚马逊河是世界流量最大河流": {
+        "truth_value": true,
+        "confidence": 0.95
+      },
+      "中国有 56 个民族": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "联合国总部在纽约": {
+        "truth_value": true,
+        "confidence": 0.99
       }
     },
     "physics": {
@@ -38,6 +111,75 @@
         "correction": "光速比声速快得多"
       },
       "重力加速度约为 9.8 m/s²": {
+        "truth_value": true,
+        "confidence": 0.95
+      },
+      "光速约为 3×10^8 m/s": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "声音在真空中可以传播": {
+        "truth_value": false,
+        "confidence": 0.99,
+        "correction": "声音不能在真空中传播"
+      },
+      "能量守恒定律是正确的": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "牛顿第一定律是惯性定律": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "电子带负电": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "质子带正电": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "中子不带电": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "绝对零度是 -273.15℃": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "水的冰点是 0 摄氏度": {
+        "truth_value": true,
+        "confidence": 0.95
+      },
+      "空气主要由氮气和氧气组成": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "地球磁场保护地球免受太阳风伤害": {
+        "truth_value": true,
+        "confidence": 0.95
+      },
+      "月亮引力引起地球潮汐": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "彩虹是由光的折射形成的": {
+        "truth_value": true,
+        "confidence": 0.95
+      },
+      "金属是良导体": {
+        "truth_value": true,
+        "confidence": 0.95
+      },
+      "橡胶是绝缘体": {
+        "truth_value": true,
+        "confidence": 0.95
+      },
+      "磁铁有南北两极": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "杠杆原理是阿基米德发现的": {
         "truth_value": true,
         "confidence": 0.95
       }
@@ -55,6 +197,74 @@
       "DNA 是遗传物质": {
         "truth_value": true,
         "confidence": 0.99
+      },
+      "人类有 46 条染色体": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "心脏负责泵血": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "肺负责呼吸": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "大脑是神经系统中枢": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "鱼类用鳃呼吸": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "哺乳动物是胎生": {
+        "truth_value": true,
+        "confidence": 0.95
+      },
+      "鸟类有羽毛": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "爬行动物是变温动物": {
+        "truth_value": true,
+        "confidence": 0.95
+      },
+      "昆虫有六条腿": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "蜘蛛不是昆虫": {
+        "truth_value": true,
+        "confidence": 0.95
+      },
+      "鲸鱼是哺乳动物": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "蝙蝠会飞": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "企鹅不会飞": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "光合作用产生氧气": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "细胞是生命基本单位": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "病毒不是细胞生物": {
+        "truth_value": true,
+        "confidence": 0.95
+      },
+      "人类妊娠期约 9 个月": {
+        "truth_value": true,
+        "confidence": 0.95
       }
     },
     "history": {
@@ -65,6 +275,78 @@
       "中国有 5000 年文明史": {
         "truth_value": true,
         "confidence": 0.90
+      },
+      "秦始皇统一六国": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "唐朝是中国古代朝代": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "明朝建造了故宫": {
+        "truth_value": true,
+        "confidence": 0.95
+      },
+      "清朝是中国最后一个封建王朝": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "美国独立于 1776 年": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "法国大革命爆发于 1789 年": {
+        "truth_value": true,
+        "confidence": 0.95
+      },
+      "第一次世界大战爆发于 1914 年": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "苏联解体于 1991 年": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "孔子是春秋时期人": {
+        "truth_value": true,
+        "confidence": 0.95
+      },
+      "李白是唐代诗人": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "成吉思汗建立了蒙古帝国": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "郑和下西洋": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "哥伦布发现了美洲": {
+        "truth_value": true,
+        "confidence": 0.95
+      },
+      "拿破仑是法国皇帝": {
+        "truth_value": true,
+        "confidence": 0.95
+      },
+      "林肯是美国总统": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "爱因斯坦提出了相对论": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "牛顿发现了万有引力": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "达尔文提出了进化论": {
+        "truth_value": true,
+        "confidence": 0.99
       }
     },
     "science": {
@@ -76,6 +358,78 @@
         "truth_value": false,
         "confidence": 0.99,
         "correction": "月亮反射太阳光"
+      },
+      "太阳是恒星": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "地球是行星": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "太阳系有八大行星": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "冥王星被降级为矮行星": {
+        "truth_value": true,
+        "confidence": 0.95
+      },
+      "银河系包含太阳系": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "宇宙在不断膨胀": {
+        "truth_value": true,
+        "confidence": 0.95
+      },
+      "黑洞引力极强": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "光年是距离单位": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "原子由质子、中子和电子组成": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "元素周期表有 118 种元素": {
+        "truth_value": true,
+        "confidence": 0.95
+      },
+      "水的化学式是 H2O": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "二氧化碳的化学式是 CO2": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "氧气的化学式是 O2": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "氢是最轻的元素": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "金是贵金属": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "钻石由碳组成": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "石油是化石燃料": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "核能是清洁能源": {
+        "truth_value": true,
+        "confidence": 0.90
       }
     }
   }
