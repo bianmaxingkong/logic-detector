@@ -60,6 +60,6 @@
     {"id": 47, "text": "她是女性，所以她不擅长数学。", "label": "hallucination", "fallacy_type": "ad_hominem", "category": "logical_fallacy"},
     {"id": 48, "text": "每次我穿红衣服，球队就赢球，所以我穿红衣服导致球队赢球。", "label": "hallucination", "fallacy_type": "false_cause", "category": "logical_fallacy"},
     {"id": 49, "text": "中国有 5000 年文明史。", "label": "valid", "fallacy_type": null, "category": "valid_reasoning"},
-    {"id": 50, "text": "如果下雨，地面会湿。地面没湿，所以没下雨。", "label": "valid", "fallacy_type": null, "category": "valid_reasoning"},
-    {"id": 51, "text": "所有 A 都是 B。C 是 A。因此 C 是 B。", "label": "valid", "fallacy_type": null, "category": "valid_reasoning"},
-    {"id": 52, "text": "如果 P 则 Q。非 Q。因此非 P。", "label": "valid", "fallacy_type": null,
+    {"id": 50, "text": "如果下雨，地面会湿。地面没湿，所以没下雨。", "label": "valid", "fallacy_type": null, "category": "valid_reasoning"}
+  ]
+}
