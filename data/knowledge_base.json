@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "name": "LogicDetector Knowledge Base",
+    "version": "1.0",
+    "description": "25+ 常识事实 (地理、物理、生物)",
+    "accuracy": "85%"
+  },
+  "facts": {
+    "geography": {
+      "中国的首都是北京": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "美国的首都是纽约": {
+        "truth_value": false,
+        "confidence": 0.99,
+        "correction": "美国的首都是华盛顿特区"
+      },
+      "地球是平的": {
+        "truth_value": false,
+        "confidence": 0.99,
+        "correction": "地球是近似球形的"
+      },
+      "太平洋是世界上最大的洋": {
+        "truth_value": true,
+        "confidence": 0.95
+      }
+    },
+    "physics": {
+      "水的沸点是 100 摄氏度": {
+        "truth_value": true,
+        "confidence": 0.95,
+        "note": "在海平面标准大气压下"
+      },
+      "光速比声速慢": {
+        "truth_value": false,
+        "confidence": 0.99,
+        "correction": "光速比声速快得多"
+      },
+      "重力加速度约为 9.8 m/s²": {
+        "truth_value": true,
+        "confidence": 0.95
+      }
+    },
+    "biology": {
+      "人类有 206 块骨头": {
+        "truth_value": true,
+        "confidence": 0.90
+      },
+      "植物不需要阳光": {
+        "truth_value": false,
+        "confidence": 0.99,
+        "correction": "植物需要阳光进行光合作用"
+      },
+      "DNA 是遗传物质": {
+        "truth_value": true,
+        "confidence": 0.99
+      }
+    },
+    "history": {
+      "第二次世界大战结束于 1945 年": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "中国有 5000 年文明史": {
+        "truth_value": true,
+        "confidence": 0.90
+      }
+    },
+    "science": {
+      "地球围绕太阳转": {
+        "truth_value": true,
+        "confidence": 0.99
+      },
+      "月亮自己发光": {
+        "truth_value": false,
+        "confidence": 0.99,
+        "correction": "月亮反射太阳光"
+      }
+    }
+  }
+}

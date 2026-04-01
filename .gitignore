@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+
+# 测试
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 实验结果
+benchmarks/results/*.json
+benchmarks/*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 临时文件
+*.tmp
+*.bak

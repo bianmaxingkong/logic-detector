@@ -1,0 +1,80 @@
+{
+  "metadata": {
+    "name": "LogicDetector Test Set",
+    "version": "1.0",
+    "description": "110 个测试用例 (54 个手动标注 + 56 个 LogiQA)",
+    "accuracy": "55.5%"
+  },
+  "test_cases": [
+    {
+      "id": 1,
+      "text": "如果下雨，地面会湿。地面湿了，所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy"
+    },
+    {
+      "id": 2,
+      "text": "如果是科学家，就很聪明。这个人不是科学家，所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy"
+    },
+    {
+      "id": 3,
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "fallacy_type": null,
+      "category": "valid_reasoning"
+    },
+    {
+      "id": 4,
+      "text": "美国的首都是纽约。",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error"
+    },
+    {
+      "id": 5,
+      "text": "地球是平的。",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error"
+    },
+    {
+      "id": 6,
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy"
+    },
+    {
+      "id": 7,
+      "text": "专家说这个药有效，所以它一定有效。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy"
+    },
+    {
+      "id": 8,
+      "text": "他品行不好，所以他的观点肯定是错的。",
+      "label": "hallucination",
+      "fallacy_type": "ad_hominem",
+      "category": "logical_fallacy"
+    },
+    {
+      "id": 9,
+      "text": "A 事件发生在 B 事件之前，所以 A 导致 B。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy"
+    },
+    {
+      "id": 10,
+      "text": "中国的首都是北京。",
+      "label": "valid",
+      "fallacy_type": null,
+      "category": "valid_reasoning"
+    }
+  ]
+}

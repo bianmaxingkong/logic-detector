@@ -1,0 +1,41 @@
+# LogicDetector 依赖
+# 基于论文要求：轻量级、离线部署、内存占用<100MB
+
+# 核心依赖
+numpy>=1.24.0
+scipy>=1.10.0
+
+# NLP 处理 (轻量级)
+spacy>=3.5.0
+# 使用小型模型以减小内存占用
+# python -m spacy download zh_core_web_sm
+
+# 句向量 (轻量级)
+sentence-transformers>=2.2.0
+# 使用 DistilBERT 以减小内存占用
+
+# NLI 模型 (用于自洽性验证)
+transformers>=4.30.0
+# 使用 DistilBERT (66M 参数)
+
+# 命名实体识别
+jieba>=0.42.0  # 中文分词
+
+# 测试
+pytest>=7.3.0
+pytest-cov>=4.1.0
+
+# 开发工具
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.0.0
+
+# 文档
+markdown>=3.4.0
+
+# 可选：Z3 定理证明器 (用于更强大的逻辑验证)
+# z3-solver>=4.12.0
+
+# 可选：完整 BERT 模型 (如果需要更高准确率)
+# transformers>=4.30.0
+# python -m spacy download zh_core_web_md
