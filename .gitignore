@@ -26,3 +26,7 @@ benchmarks/*.log
 # 临时文件
 *.tmp
 *.bak
+
+# 配置文件 (包含 API Key)
+config/*.json
+!config/README.md
