@@ -1,0 +1,65 @@
+{
+  "timestamp": "2026-04-08T23:10:18.120356",
+  "results": [
+    {
+      "dataset": "LogicDetector-Bench (主测试集)",
+      "total": 600,
+      "accuracy": 0.365,
+      "precision": 0.2753623188405797,
+      "recall": 0.054285714285714284,
+      "f1": 0.09069212410501194,
+      "time_seconds": 0.0019521713256835938,
+      "confusion_matrix": {
+        "true_positive": 19,
+        "true_negative": 200,
+        "false_positive": 50,
+        "false_negative": 331
+      }
+    },
+    {
+      "dataset": "LogiQA (完整集)",
+      "total": 8678,
+      "accuracy": 0.7105323807328877,
+      "precision": 1.0,
+      "recall": 0.18784351762043325,
+      "f1": 0.3162765378334241,
+      "time_seconds": 0.026251554489135742,
+      "confusion_matrix": {
+        "true_positive": 581,
+        "true_negative": 5585,
+        "false_positive": 0,
+        "false_negative": 2512
+      }
+    },
+    {
+      "dataset": "CoT-Hub (抽样)",
+      "total": 500,
+      "accuracy": 0.692,
+      "precision": 0,
+      "recall": 0.0,
+      "f1": 0,
+      "time_seconds": 0.0014574527740478516,
+      "confusion_matrix": {
+        "true_positive": 0,
+        "true_negative": 346,
+        "false_positive": 0,
+        "false_negative": 154
+      }
+    },
+    {
+      "dataset": "LogicInference (抽样)",
+      "total": 500,
+      "accuracy": 0.818,
+      "precision": 0,
+      "recall": 0.0,
+      "f1": 0,
+      "time_seconds": 0.0013356208801269531,
+      "confusion_matrix": {
+        "true_positive": 0,
+        "true_negative": 409,
+        "false_positive": 0,
+        "false_negative": 91
+      }
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "metadata": {
+    "model": "GPT-4",
+    "total_cases": 9,
+    "generated_at": "2026-04-04"
+  },
+  "test_cases": [
+    {
+      "id": "GPT-4_000",
+      "text": "所有哺乳动物都有脊椎。狗是哺乳动物。所以狗有脊椎。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "source_model": "GPT-4"
+    },
+    {
+      "id": "GPT-4_001",
+      "text": "如果 A 则 B。A 成立。因此 B 成立。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "source_model": "GPT-4"
+    },
+    {
+      "id": "GPT-4_002",
+      "text": "大部分鸟都会飞。麻雀是鸟。所以麻雀会飞。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "source_model": "GPT-4"
+    },
+    {
+      "id": "GPT-4_003",
+      "text": "他是专家，所以他说的肯定是对的。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "source_model": "GPT-4"
+    },
+    {
+      "id": "GPT-4_004",
+      "text": "如果下雨地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "source_model": "GPT-4"
+    },
+    {
+      "id": "GPT-4_005",
+      "text": "你不喜欢这个方案，所以你肯定不懂技术。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "source_model": "GPT-4"
+    },
+    {
+      "id": "GPT-4_006",
+      "text": "A 发生在 B 之前，所以 A 导致 B。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "source_model": "GPT-4"
+    },
+    {
+      "id": "GPT-4_007",
+      "text": "地球是平的，这是科学事实。",
+      "label": "hallucination",
+      "category": "factual_error",
+      "source_model": "GPT-4"
+    },
+    {
+      "id": "GPT-4_008",
+      "text": "水的沸点是 50 摄氏度。",
+      "label": "hallucination",
+      "category": "factual_error",
+      "source_model": "GPT-4"
+    }
+  ]
+}

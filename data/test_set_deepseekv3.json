@@ -1,0 +1,170 @@
+{
+  "metadata": {
+    "model": "DeepSeek-V3",
+    "total_cases": 20,
+    "generated_at": "2026-04-04",
+    "base_test_cases": 20
+  },
+  "test_cases": [
+    {
+      "id": "deepseek-v3_000",
+      "text": "[DeepSeek-V3] 所有哺乳动物都有脊椎。狗是哺乳动物。所以狗有脊椎。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "source_model": "DeepSeek-V3",
+      "original_text": "所有哺乳动物都有脊椎。狗是哺乳动物。所以狗有脊椎。"
+    },
+    {
+      "id": "deepseek-v3_001",
+      "text": "[DeepSeek-V3] 如果 A 则 B。A 成立。因此 B 成立。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "source_model": "DeepSeek-V3",
+      "original_text": "如果 A 则 B。A 成立。因此 B 成立。"
+    },
+    {
+      "id": "deepseek-v3_002",
+      "text": "[DeepSeek-V3] 大部分鸟都会飞。麻雀是鸟。所以麻雀会飞。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "source_model": "DeepSeek-V3",
+      "original_text": "大部分鸟都会飞。麻雀是鸟。所以麻雀会飞。"
+    },
+    {
+      "id": "deepseek-v3_003",
+      "text": "[DeepSeek-V3] 所有人都会死。苏格拉底是人。所以苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "source_model": "DeepSeek-V3",
+      "original_text": "所有人都会死。苏格拉底是人。所以苏格拉底会死。"
+    },
+    {
+      "id": "deepseek-v3_004",
+      "text": "[DeepSeek-V3] 金属导电。铜是金属。所以铜导电。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "source_model": "DeepSeek-V3",
+      "original_text": "金属导电。铜是金属。所以铜导电。"
+    },
+    {
+      "id": "deepseek-v3_005",
+      "text": "[DeepSeek-V3] 他是专家，所以他说的肯定是对的。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "source_model": "DeepSeek-V3",
+      "original_text": "他是专家，所以他说的肯定是对的。"
+    },
+    {
+      "id": "deepseek-v3_006",
+      "text": "[DeepSeek-V3] 如果下雨地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "source_model": "DeepSeek-V3",
+      "original_text": "如果下雨地面会湿。地面湿了。所以下雨了。"
+    },
+    {
+      "id": "deepseek-v3_007",
+      "text": "[DeepSeek-V3] 你不喜欢这个方案，所以你肯定不懂技术。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "source_model": "DeepSeek-V3",
+      "original_text": "你不喜欢这个方案，所以你肯定不懂技术。"
+    },
+    {
+      "id": "deepseek-v3_008",
+      "text": "[DeepSeek-V3] A 发生在 B 之前，所以 A 导致 B。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "source_model": "DeepSeek-V3",
+      "original_text": "A 发生在 B 之前，所以 A 导致 B。"
+    },
+    {
+      "id": "deepseek-v3_009",
+      "text": "[DeepSeek-V3] 大家都这么说，所以这肯定是对的。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "source_model": "DeepSeek-V3",
+      "original_text": "大家都这么说，所以这肯定是对的。"
+    },
+    {
+      "id": "deepseek-v3_010",
+      "text": "[DeepSeek-V3] 你连这个都不懂，还好意思说话。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "source_model": "DeepSeek-V3",
+      "original_text": "你连这个都不懂，还好意思说话。"
+    },
+    {
+      "id": "deepseek-v3_011",
+      "text": "[DeepSeek-V3] 这个理论出自诺贝尔奖获得者，所以一定是真理。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "source_model": "DeepSeek-V3",
+      "original_text": "这个理论出自诺贝尔奖获得者，所以一定是真理。"
+    },
+    {
+      "id": "deepseek-v3_012",
+      "text": "[DeepSeek-V3] 要么支持我，要么就是我的敌人。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "source_model": "DeepSeek-V3",
+      "original_text": "要么支持我，要么就是我的敌人。"
+    },
+    {
+      "id": "deepseek-v3_013",
+      "text": "[DeepSeek-V3] 你昨天说 A，今天说 B，所以你不可信。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "source_model": "DeepSeek-V3",
+      "original_text": "你昨天说 A，今天说 B，所以你不可信。"
+    },
+    {
+      "id": "deepseek-v3_014",
+      "text": "[DeepSeek-V3] 这个药有效，因为从来没人证明它无效。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "source_model": "DeepSeek-V3",
+      "original_text": "这个药有效，因为从来没人证明它无效。"
+    },
+    {
+      "id": "deepseek-v3_015",
+      "text": "[DeepSeek-V3] 地球是平的，这是科学事实。",
+      "label": "hallucination",
+      "category": "factual_error",
+      "source_model": "DeepSeek-V3",
+      "original_text": "地球是平的，这是科学事实。"
+    },
+    {
+      "id": "deepseek-v3_016",
+      "text": "[DeepSeek-V3] 水的沸点是 50 摄氏度。",
+      "label": "hallucination",
+      "category": "factual_error",
+      "source_model": "DeepSeek-V3",
+      "original_text": "水的沸点是 50 摄氏度。"
+    },
+    {
+      "id": "deepseek-v3_017",
+      "text": "[DeepSeek-V3] 太阳绕着地球转。",
+      "label": "hallucination",
+      "category": "factual_error",
+      "source_model": "DeepSeek-V3",
+      "original_text": "太阳绕着地球转。"
+    },
+    {
+      "id": "deepseek-v3_018",
+      "text": "[DeepSeek-V3] 人类只使用了大脑的 10%。",
+      "label": "hallucination",
+      "category": "factual_error",
+      "source_model": "DeepSeek-V3",
+      "original_text": "人类只使用了大脑的 10%。"
+    },
+    {
+      "id": "deepseek-v3_019",
+      "text": "[DeepSeek-V3] 金鱼只有 3 秒记忆。",
+      "label": "hallucination",
+      "category": "factual_error",
+      "source_model": "DeepSeek-V3",
+      "original_text": "金鱼只有 3 秒记忆。"
+    }
+  ]
+}

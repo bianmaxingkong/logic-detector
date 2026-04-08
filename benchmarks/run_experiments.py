@@ -22,9 +22,36 @@ from modules.logic_validator import LogicValidator, FallacyType
 from modules.fact_checker import FactChecker
 
 
-def load_test_set() -> List[Dict]:
-    """加载 110 个测试用例"""
-    test_set_path = "/home/baibai/.openclaw/workspace/logic-detector/data/test_set_110.json"
+def load_test_set(test_set_name: str = "default") -> List[Dict]:
+    """
+    加载测试集
+    
+    Args:
+        test_set_name: 测试集名称
+            - "default": 默认 110 样本
+            - "full": 600 样本全量版
+            - "logiqa_1000": LogiQA 1000 样本
+            - "logiqa_full": LogiQA 8678 样本全量
+            - "cothub": Chain of Thought Hub 150 样本
+            - "logicinf": LogicInference 150 样本
+            - "llmcheck": LLM-Check 100 样本
+            - "combined_benchmark": 合并基准 400 样本
+    """
+    test_set_paths = {
+        "default": "/home/baibai/.openclaw/workspace/logic-detector/data/test_set_110.json",
+        "full": "/home/baibai/.openclaw/workspace/logic-detector/data/test_set_full_600.json",
+        "logiqa_1000": "/home/baibai/.openclaw/workspace/logic-detector/data/test_set_logiqa_1000.json",
+        "logiqa_full": "/home/baibai/.openclaw/workspace/logic-detector/data/test_set_logiqa_full_8678.json",
+        "cothub": "/home/baibai/.openclaw/workspace/logic-detector/data/test_set_cothub.json",
+        "cothub_full": "/home/baibai/.openclaw/workspace/logic-detector/data/test_set_cothub_full.json",
+        "logicinf": "/home/baibai/.openclaw/workspace/logic-detector/data/test_set_logicinf.json",
+        "logicinference_full": "/home/baibai/.openclaw/workspace/logic-detector/data/test_set_logicinference_full.json",
+        "llmcheck": "/home/baibai/.openclaw/workspace/logic-detector/data/test_set_llmcheck.json",
+        "combined_benchmark": "/home/baibai/.openclaw/workspace/logic-detector/data/test_set_combined_benchmark.json"
+    }
+    
+    test_set_path = test_set_paths.get(test_set_name, test_set_paths["default"])
+    
     with open(test_set_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
     return data.get('test_cases', [])
@@ -90,12 +117,28 @@ def run_accuracy_test(detector: LogicDetector, test_cases: List[Dict]) -> Dict:
         acc = stats["correct"] / stats["total"] if stats["total"] > 0 else 0.0
         category_accuracies[category] = acc
     
+    # 计算精确率、召回率、F1 分数
+    tp = sum(1 for r in results if r["true_label"] == "hallucination" and r["pred_label"] == "hallucination")
+    fp = sum(1 for r in results if r["true_label"] == "valid" and r["pred_label"] == "hallucination")
+    fn = sum(1 for r in results if r["true_label"] == "hallucination" and r["pred_label"] == "valid")
+    tn = sum(1 for r in results if r["true_label"] == "valid" and r["pred_label"] == "valid")
+    
+    precision = tp / (tp + fp) if (tp + fp) > 0 else 0.0
+    recall = tp / (tp + fn) if (tp + fn) > 0 else 0.0
+    f1 = 2 * (precision * recall) / (precision + recall) if (precision + recall) > 0 else 0.0
+    
     # 打印结果
     print(f"\n总体准确率：{overall_accuracy:.1%} ({correct}/{total})")
     print(f"\n分类准确率:")
     print(f"  有效推理：{category_accuracies.get('valid_reasoning', 0):.1%}")
     print(f"  逻辑谬误：{category_accuracies.get('logical_fallacy', 0):.1%}")
     print(f"  事实错误：{category_accuracies.get('factual_error', 0):.1%}")
+    print(f"\n新增指标:")
+    print(f"  精确率 (Precision): {precision:.1%}")
+    print(f"  召回率 (Recall): {recall:.1%}")
+    print(f"  F1 分数：{f1:.1%}")
+    print(f"\n混淆矩阵:")
+    print(f"  TP={tp}, FP={fp}, FN={fn}, TN={tn}")
     
     return {
         "experiment": "accuracy_test",
@@ -103,6 +146,10 @@ def run_accuracy_test(detector: LogicDetector, test_cases: List[Dict]) -> Dict:
         "correct": correct,
         "total": total,
         "category_accuracies": category_accuracies,
+        "precision": precision,
+        "recall": recall,
+        "f1_score": f1,
+        "confusion_matrix": {"tp": tp, "fp": fp, "fn": fn, "tn": tn},
         "results": results,
     }
 
@@ -266,9 +313,21 @@ def save_results(all_results: Dict, output_path: str):
 
 def main():
     """主函数"""
+    import sys
+    
+    # 解析命令行参数
+    test_set_name = "default"
+    if len(sys.argv) > 1:
+        arg = sys.argv[1]
+        if arg.startswith("--test-set="):
+            test_set_name = arg.split("=")[1]
+        elif arg in ["default", "full", "logiqa_1000", "logiqa_full"]:
+            test_set_name = arg
+    
     print("="*60)
     print("LogicDetector 实验套件")
     print("="*60)
+    print(f"测试集：{test_set_name}")
     print(f"开始时间：{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     
     # 初始化检测器
@@ -276,8 +335,8 @@ def main():
     
     # 加载测试集
     print("\n加载测试集...")
-    test_cases = load_test_set()
-    print(f"加载了 {len(test_cases)} 个测试用例")
+    test_cases = load_test_set(test_set_name)
+    print(f"加载了 {len(test_cases):,} 个测试用例")
     
     # 运行所有实验
     all_results = {
@@ -307,6 +366,8 @@ def main():
     # 保存结果
     output_path = "/home/baibai/.openclaw/workspace/logic-detector/benchmarks/results"
     os.makedirs(output_path, exist_ok=True)
+    # 添加测试集名称到文件名
+    all_results["metadata"]["test_set_name"] = test_set_name
     results_file = save_results(all_results, output_path)
     
     print("\n" + "="*60)

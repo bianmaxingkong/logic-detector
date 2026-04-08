@@ -1,0 +1,13 @@
+{
+  "total_models": 5,
+  "models": [
+    "Qwen3.5-Plus",
+    "Qwen3-Coder-Next",
+    "DeepSeek-R1",
+    "DeepSeek-V3",
+    "Kimi-K2.5"
+  ],
+  "total_test_cases": 100,
+  "output_dir": "/home/baibai/.openclaw/workspace/logic-detector/data",
+  "generated_at": "2026-04-04"
+}

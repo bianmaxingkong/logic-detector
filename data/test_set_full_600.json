@@ -1,0 +1,5227 @@
+{
+  "metadata": {
+    "name": "LogicDetector Full Test Set",
+    "version": "3.0",
+    "description": "全量测试集 (600 个样本)",
+    "total_samples": 600,
+    "sources": {
+      "LogiQA": 200,
+      "Chain of Thought Hub": 150,
+      "LogicInference": 150,
+      "Manual": 100
+    },
+    "category_distribution": {
+      "valid_reasoning": 250,
+      "logical_fallacy": 300,
+      "factual_error": 50
+    },
+    "difficulty_distribution": {
+      "easy": 235,
+      "medium": 225,
+      "hard": 140
+    },
+    "generation_date": "2026-04-02 14:15:36"
+  },
+  "test_cases": [
+    {
+      "id": "full_0001",
+      "source": "Manual",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0002",
+      "source": "Manual",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0003",
+      "source": "LogicInference",
+      "text": "美国的首都是纽约",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "美国的首都是华盛顿特区"
+    },
+    {
+      "id": "full_0004",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含诉诸权威谬误。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0005",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0006",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0007",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含人身攻击谬误。",
+      "label": "hallucination",
+      "fallacy_type": "ad_hominem",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0008",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0009",
+      "source": "LogicInference",
+      "text": "美国的首都是纽约",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "美国的首都是华盛顿特区"
+    },
+    {
+      "id": "full_0010",
+      "source": "LogicInference",
+      "text": "光速比声速慢",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "光速比声速快"
+    },
+    {
+      "id": "full_0011",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含否定前件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0012",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0013",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含肯定后件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0014",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0015",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0016",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0017",
+      "source": "Manual",
+      "text": "他品行不好。所以他的观点肯定是错的。",
+      "label": "hallucination",
+      "fallacy_type": "ad_hominem",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0018",
+      "source": "LogiQA",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0019",
+      "source": "Manual",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0020",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0021",
+      "source": "LogicInference",
+      "text": "光速比声速慢",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "光速比声速快"
+    },
+    {
+      "id": "full_0022",
+      "source": "LogiQA",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0023",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0024",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含轻率概括谬误。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0025",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0026",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0027",
+      "source": "LogiQA",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0028",
+      "source": "LogicInference",
+      "text": "地球是平的",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "地球是近似球形的"
+    },
+    {
+      "id": "full_0029",
+      "source": "LogiQA",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0030",
+      "source": "LogicInference",
+      "text": "中国的首都是上海",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "中国的首都是北京"
+    },
+    {
+      "id": "full_0031",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含肯定后件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0032",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0033",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0034",
+      "source": "Manual",
+      "text": "他品行不好。所以他的观点肯定是错的。",
+      "label": "hallucination",
+      "fallacy_type": "ad_hominem",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0035",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0036",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0037",
+      "source": "Manual",
+      "text": "地球绕着太阳转。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0038",
+      "source": "LogiQA",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0039",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0040",
+      "source": "Manual",
+      "text": "地球绕着太阳转。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0041",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含诉诸权威谬误。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0042",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0043",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0044",
+      "source": "LogiQA",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0045",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0046",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0047",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0048",
+      "source": "Manual",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0049",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0050",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含轻率概括谬误。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0051",
+      "source": "LogiQA",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0052",
+      "source": "LogiQA",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0053",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0054",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0055",
+      "source": "LogiQA",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0056",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0057",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含诉诸权威谬误。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0058",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0059",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含肯定后件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0060",
+      "source": "LogiQA",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0061",
+      "source": "LogicInference",
+      "text": "水的沸点是 50 度",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "水的沸点是 100 度"
+    },
+    {
+      "id": "full_0062",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0063",
+      "source": "LogiQA",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0064",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含诉诸权威谬误。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0065",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0066",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0067",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0068",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0069",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0070",
+      "source": "Manual",
+      "text": "地球绕着太阳转。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0071",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0072",
+      "source": "LogiQA",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0073",
+      "source": "LogiQA",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0074",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0075",
+      "source": "LogiQA",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0076",
+      "source": "Manual",
+      "text": "地球绕着太阳转。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0077",
+      "source": "Manual",
+      "text": "地球绕着太阳转。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0078",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0079",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含肯定后件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0080",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含轻率概括谬误。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0081",
+      "source": "LogiQA",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0082",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0083",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0084",
+      "source": "Manual",
+      "text": "地球绕着太阳转。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0085",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0086",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0087",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含人身攻击谬误。",
+      "label": "hallucination",
+      "fallacy_type": "ad_hominem",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0088",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0089",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含人身攻击谬误。",
+      "label": "hallucination",
+      "fallacy_type": "ad_hominem",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0090",
+      "source": "Manual",
+      "text": "地球绕着太阳转。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0091",
+      "source": "LogicInference",
+      "text": "美国的首都是纽约",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "美国的首都是华盛顿特区"
+    },
+    {
+      "id": "full_0092",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0093",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0094",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0095",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0096",
+      "source": "LogiQA",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0097",
+      "source": "LogiQA",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0098",
+      "source": "LogiQA",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0099",
+      "source": "LogiQA",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0100",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0101",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0102",
+      "source": "LogiQA",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0103",
+      "source": "LogicInference",
+      "text": "地球是平的",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "地球是近似球形的"
+    },
+    {
+      "id": "full_0104",
+      "source": "LogiQA",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0105",
+      "source": "LogicInference",
+      "text": "美国的首都是纽约",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "美国的首都是华盛顿特区"
+    },
+    {
+      "id": "full_0106",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含虚假因果谬误。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0107",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0108",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0109",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0110",
+      "source": "Manual",
+      "text": "地球绕着太阳转。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0111",
+      "source": "Manual",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0112",
+      "source": "LogiQA",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0113",
+      "source": "LogiQA",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0114",
+      "source": "LogicInference",
+      "text": "水的沸点是 50 度",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "水的沸点是 100 度"
+    },
+    {
+      "id": "full_0115",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含人身攻击谬误。",
+      "label": "hallucination",
+      "fallacy_type": "ad_hominem",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0116",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0117",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0118",
+      "source": "Manual",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0119",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含轻率概括谬误。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0120",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含诉诸权威谬误。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0121",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0122",
+      "source": "LogiQA",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0123",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0124",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0125",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含肯定后件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0126",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0127",
+      "source": "LogiQA",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0128",
+      "source": "LogiQA",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0129",
+      "source": "LogicInference",
+      "text": "中国的首都是上海",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "中国的首都是北京"
+    },
+    {
+      "id": "full_0130",
+      "source": "LogiQA",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0131",
+      "source": "Manual",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0132",
+      "source": "LogicInference",
+      "text": "地球是平的",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "地球是近似球形的"
+    },
+    {
+      "id": "full_0133",
+      "source": "LogicInference",
+      "text": "美国的首都是纽约",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "美国的首都是华盛顿特区"
+    },
+    {
+      "id": "full_0134",
+      "source": "LogiQA",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0135",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含人身攻击谬误。",
+      "label": "hallucination",
+      "fallacy_type": "ad_hominem",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0136",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0137",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0138",
+      "source": "Manual",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0139",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0140",
+      "source": "LogiQA",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0141",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含否定前件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0142",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含虚假因果谬误。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0143",
+      "source": "LogiQA",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0144",
+      "source": "LogicInference",
+      "text": "水的沸点是 50 度",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "水的沸点是 100 度"
+    },
+    {
+      "id": "full_0145",
+      "source": "Manual",
+      "text": "地球绕着太阳转。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0146",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0147",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0148",
+      "source": "Manual",
+      "text": "地球绕着太阳转。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0149",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含虚假因果谬误。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0150",
+      "source": "LogiQA",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0151",
+      "source": "LogiQA",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0152",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0153",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0154",
+      "source": "Manual",
+      "text": "地球绕着太阳转。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0155",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0156",
+      "source": "LogicInference",
+      "text": "美国的首都是纽约",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "美国的首都是华盛顿特区"
+    },
+    {
+      "id": "full_0157",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含诉诸权威谬误。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0158",
+      "source": "Manual",
+      "text": "地球绕着太阳转。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0159",
+      "source": "Manual",
+      "text": "地球绕着太阳转。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0160",
+      "source": "LogicInference",
+      "text": "光速比声速慢",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "光速比声速快"
+    },
+    {
+      "id": "full_0161",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含肯定后件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0162",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0163",
+      "source": "LogiQA",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0164",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0165",
+      "source": "LogiQA",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0166",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0167",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含轻率概括谬误。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0168",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0169",
+      "source": "Manual",
+      "text": "他品行不好。所以他的观点肯定是错的。",
+      "label": "hallucination",
+      "fallacy_type": "ad_hominem",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0170",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0171",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含轻率概括谬误。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0172",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0173",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0174",
+      "source": "Manual",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0175",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含虚假因果谬误。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0176",
+      "source": "Manual",
+      "text": "他品行不好。所以他的观点肯定是错的。",
+      "label": "hallucination",
+      "fallacy_type": "ad_hominem",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0177",
+      "source": "LogiQA",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0178",
+      "source": "Manual",
+      "text": "他品行不好。所以他的观点肯定是错的。",
+      "label": "hallucination",
+      "fallacy_type": "ad_hominem",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0179",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0180",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0181",
+      "source": "LogiQA",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0182",
+      "source": "LogiQA",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0183",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0184",
+      "source": "Manual",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0185",
+      "source": "Manual",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0186",
+      "source": "Manual",
+      "text": "地球绕着太阳转。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0187",
+      "source": "LogicInference",
+      "text": "水的沸点是 50 度",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "水的沸点是 100 度"
+    },
+    {
+      "id": "full_0188",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0189",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0190",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含肯定后件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0191",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含否定前件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0192",
+      "source": "LogicInference",
+      "text": "光速比声速慢",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "光速比声速快"
+    },
+    {
+      "id": "full_0193",
+      "source": "LogiQA",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0194",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0195",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含虚假因果谬误。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0196",
+      "source": "LogiQA",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0197",
+      "source": "Manual",
+      "text": "地球绕着太阳转。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0198",
+      "source": "LogiQA",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0199",
+      "source": "LogiQA",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0200",
+      "source": "LogiQA",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0201",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0202",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0203",
+      "source": "LogiQA",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0204",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0205",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含肯定后件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0206",
+      "source": "LogiQA",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0207",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0208",
+      "source": "LogiQA",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0209",
+      "source": "LogicInference",
+      "text": "美国的首都是纽约",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "美国的首都是华盛顿特区"
+    },
+    {
+      "id": "full_0210",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0211",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0212",
+      "source": "LogiQA",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0213",
+      "source": "Manual",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0214",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含否定前件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0215",
+      "source": "Manual",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0216",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0217",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0218",
+      "source": "Manual",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0219",
+      "source": "LogicInference",
+      "text": "中国的首都是上海",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "中国的首都是北京"
+    },
+    {
+      "id": "full_0220",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0221",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0222",
+      "source": "LogiQA",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0223",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含轻率概括谬误。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0224",
+      "source": "Manual",
+      "text": "地球绕着太阳转。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0225",
+      "source": "Manual",
+      "text": "地球绕着太阳转。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0226",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含诉诸权威谬误。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0227",
+      "source": "LogiQA",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0228",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含否定前件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0229",
+      "source": "Manual",
+      "text": "地球绕着太阳转。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0230",
+      "source": "LogicInference",
+      "text": "水的沸点是 50 度",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "水的沸点是 100 度"
+    },
+    {
+      "id": "full_0231",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0232",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0233",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0234",
+      "source": "LogiQA",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0235",
+      "source": "Manual",
+      "text": "地球绕着太阳转。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0236",
+      "source": "Manual",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0237",
+      "source": "Manual",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0238",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0239",
+      "source": "LogiQA",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0240",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0241",
+      "source": "Manual",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0242",
+      "source": "LogiQA",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0243",
+      "source": "LogiQA",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0244",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含否定前件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0245",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0246",
+      "source": "LogiQA",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0247",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含轻率概括谬误。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0248",
+      "source": "LogiQA",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0249",
+      "source": "Manual",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0250",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0251",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0252",
+      "source": "Manual",
+      "text": "地球绕着太阳转。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0253",
+      "source": "LogicInference",
+      "text": "中国的首都是上海",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "中国的首都是北京"
+    },
+    {
+      "id": "full_0254",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含肯定后件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0255",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0256",
+      "source": "LogiQA",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0257",
+      "source": "LogicInference",
+      "text": "水的沸点是 50 度",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "水的沸点是 100 度"
+    },
+    {
+      "id": "full_0258",
+      "source": "LogiQA",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0259",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含肯定后件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0260",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0261",
+      "source": "LogicInference",
+      "text": "光速比声速慢",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "光速比声速快"
+    },
+    {
+      "id": "full_0262",
+      "source": "LogiQA",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0263",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0264",
+      "source": "LogicInference",
+      "text": "地球是平的",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "地球是近似球形的"
+    },
+    {
+      "id": "full_0265",
+      "source": "Manual",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0266",
+      "source": "Manual",
+      "text": "他品行不好。所以他的观点肯定是错的。",
+      "label": "hallucination",
+      "fallacy_type": "ad_hominem",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0267",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含肯定后件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0268",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0269",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0270",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0271",
+      "source": "Manual",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0272",
+      "source": "Manual",
+      "text": "地球绕着太阳转。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0273",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0274",
+      "source": "LogicInference",
+      "text": "光速比声速慢",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "光速比声速快"
+    },
+    {
+      "id": "full_0275",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0276",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0277",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0278",
+      "source": "LogiQA",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0279",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0280",
+      "source": "Manual",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0281",
+      "source": "Manual",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0282",
+      "source": "Manual",
+      "text": "地球绕着太阳转。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0283",
+      "source": "LogiQA",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0284",
+      "source": "Manual",
+      "text": "地球绕着太阳转。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0285",
+      "source": "LogiQA",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0286",
+      "source": "Manual",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0287",
+      "source": "LogiQA",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0288",
+      "source": "LogiQA",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0289",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0290",
+      "source": "Manual",
+      "text": "地球绕着太阳转。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0291",
+      "source": "LogiQA",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0292",
+      "source": "Manual",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0293",
+      "source": "LogiQA",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0294",
+      "source": "LogiQA",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0295",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含肯定后件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0296",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0297",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含轻率概括谬误。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0298",
+      "source": "LogiQA",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0299",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0300",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0301",
+      "source": "LogiQA",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0302",
+      "source": "LogiQA",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0303",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0304",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0305",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0306",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含否定前件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0307",
+      "source": "LogiQA",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0308",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0309",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0310",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0311",
+      "source": "LogiQA",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0312",
+      "source": "LogicInference",
+      "text": "水的沸点是 50 度",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "水的沸点是 100 度"
+    },
+    {
+      "id": "full_0313",
+      "source": "LogiQA",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0314",
+      "source": "LogiQA",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0315",
+      "source": "Manual",
+      "text": "他品行不好。所以他的观点肯定是错的。",
+      "label": "hallucination",
+      "fallacy_type": "ad_hominem",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0316",
+      "source": "Manual",
+      "text": "地球绕着太阳转。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0317",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0318",
+      "source": "LogiQA",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0319",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含轻率概括谬误。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0320",
+      "source": "Manual",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0321",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0322",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0323",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含人身攻击谬误。",
+      "label": "hallucination",
+      "fallacy_type": "ad_hominem",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0324",
+      "source": "LogiQA",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0325",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0326",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0327",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0328",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含诉诸权威谬误。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0329",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0330",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含虚假因果谬误。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0331",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0332",
+      "source": "LogiQA",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0333",
+      "source": "LogiQA",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0334",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含轻率概括谬误。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0335",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0336",
+      "source": "LogiQA",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0337",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0338",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0339",
+      "source": "LogiQA",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0340",
+      "source": "LogicInference",
+      "text": "美国的首都是纽约",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "美国的首都是华盛顿特区"
+    },
+    {
+      "id": "full_0341",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含虚假因果谬误。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0342",
+      "source": "Manual",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0343",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0344",
+      "source": "Manual",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0345",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含诉诸权威谬误。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0346",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含诉诸权威谬误。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0347",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0348",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含肯定后件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0349",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0350",
+      "source": "LogiQA",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0351",
+      "source": "LogiQA",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0352",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含人身攻击谬误。",
+      "label": "hallucination",
+      "fallacy_type": "ad_hominem",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0353",
+      "source": "LogiQA",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0354",
+      "source": "LogiQA",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0355",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0356",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0357",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0358",
+      "source": "Manual",
+      "text": "地球绕着太阳转。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0359",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0360",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0361",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0362",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含肯定后件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0363",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0364",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含人身攻击谬误。",
+      "label": "hallucination",
+      "fallacy_type": "ad_hominem",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0365",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含诉诸权威谬误。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0366",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0367",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含否定前件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0368",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含诉诸权威谬误。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0369",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含轻率概括谬误。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0370",
+      "source": "LogiQA",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0371",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0372",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含诉诸权威谬误。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0373",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0374",
+      "source": "LogicInference",
+      "text": "水的沸点是 50 度",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "水的沸点是 100 度"
+    },
+    {
+      "id": "full_0375",
+      "source": "LogiQA",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0376",
+      "source": "LogiQA",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0377",
+      "source": "LogiQA",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0378",
+      "source": "LogicInference",
+      "text": "光速比声速慢",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "光速比声速快"
+    },
+    {
+      "id": "full_0379",
+      "source": "LogiQA",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0380",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0381",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0382",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含肯定后件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0383",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0384",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含否定前件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0385",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0386",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0387",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含虚假因果谬误。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0388",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含肯定后件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0389",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0390",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0391",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0392",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0393",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0394",
+      "source": "Manual",
+      "text": "他品行不好。所以他的观点肯定是错的。",
+      "label": "hallucination",
+      "fallacy_type": "ad_hominem",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0395",
+      "source": "LogiQA",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0396",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含否定前件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0397",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含人身攻击谬误。",
+      "label": "hallucination",
+      "fallacy_type": "ad_hominem",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0398",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0399",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0400",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0401",
+      "source": "LogiQA",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0402",
+      "source": "LogicInference",
+      "text": "光速比声速慢",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "光速比声速快"
+    },
+    {
+      "id": "full_0403",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0404",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含否定前件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0405",
+      "source": "LogiQA",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0406",
+      "source": "LogiQA",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0407",
+      "source": "Manual",
+      "text": "地球绕着太阳转。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0408",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含肯定后件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0409",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含轻率概括谬误。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0410",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含轻率概括谬误。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0411",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含诉诸权威谬误。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0412",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0413",
+      "source": "LogicInference",
+      "text": "水的沸点是 50 度",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "水的沸点是 100 度"
+    },
+    {
+      "id": "full_0414",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含肯定后件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0415",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0416",
+      "source": "LogicInference",
+      "text": "光速比声速慢",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "光速比声速快"
+    },
+    {
+      "id": "full_0417",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0418",
+      "source": "LogiQA",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0419",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含否定前件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0420",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0421",
+      "source": "Manual",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0422",
+      "source": "LogiQA",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0423",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含否定前件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0424",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0425",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含虚假因果谬误。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0426",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0427",
+      "source": "LogiQA",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0428",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0429",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含诉诸权威谬误。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0430",
+      "source": "LogicInference",
+      "text": "美国的首都是纽约",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "美国的首都是华盛顿特区"
+    },
+    {
+      "id": "full_0431",
+      "source": "Manual",
+      "text": "地球绕着太阳转。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0432",
+      "source": "Manual",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0433",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含否定前件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0434",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0435",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含轻率概括谬误。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0436",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0437",
+      "source": "LogicInference",
+      "text": "中国的首都是上海",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "中国的首都是北京"
+    },
+    {
+      "id": "full_0438",
+      "source": "LogiQA",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0439",
+      "source": "Manual",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0440",
+      "source": "Manual",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0441",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含诉诸权威谬误。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0442",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0443",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含虚假因果谬误。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0444",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0445",
+      "source": "LogiQA",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0446",
+      "source": "LogiQA",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0447",
+      "source": "Manual",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0448",
+      "source": "LogiQA",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0449",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0450",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0451",
+      "source": "Manual",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0452",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含轻率概括谬误。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0453",
+      "source": "LogicInference",
+      "text": "中国的首都是上海",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "中国的首都是北京"
+    },
+    {
+      "id": "full_0454",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0455",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0456",
+      "source": "Manual",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0457",
+      "source": "LogiQA",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0458",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0459",
+      "source": "LogicInference",
+      "text": "中国的首都是上海",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "中国的首都是北京"
+    },
+    {
+      "id": "full_0460",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0461",
+      "source": "Manual",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0462",
+      "source": "LogiQA",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0463",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0464",
+      "source": "Manual",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0465",
+      "source": "LogiQA",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0466",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0467",
+      "source": "Manual",
+      "text": "他品行不好。所以他的观点肯定是错的。",
+      "label": "hallucination",
+      "fallacy_type": "ad_hominem",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0468",
+      "source": "Manual",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0469",
+      "source": "LogicInference",
+      "text": "光速比声速慢",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "光速比声速快"
+    },
+    {
+      "id": "full_0470",
+      "source": "LogiQA",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0471",
+      "source": "Manual",
+      "text": "地球绕着太阳转。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0472",
+      "source": "Manual",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0473",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0474",
+      "source": "LogiQA",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0475",
+      "source": "LogiQA",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0476",
+      "source": "LogicInference",
+      "text": "美国的首都是纽约",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "美国的首都是华盛顿特区"
+    },
+    {
+      "id": "full_0477",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0478",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0479",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0480",
+      "source": "Manual",
+      "text": "他品行不好。所以他的观点肯定是错的。",
+      "label": "hallucination",
+      "fallacy_type": "ad_hominem",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0481",
+      "source": "LogicInference",
+      "text": "地球是平的",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "地球是近似球形的"
+    },
+    {
+      "id": "full_0482",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含诉诸权威谬误。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0483",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含否定前件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0484",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0485",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0486",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含否定前件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0487",
+      "source": "LogicInference",
+      "text": "地球是平的",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "地球是近似球形的"
+    },
+    {
+      "id": "full_0488",
+      "source": "Manual",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0489",
+      "source": "LogicInference",
+      "text": "中国的首都是上海",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "中国的首都是北京"
+    },
+    {
+      "id": "full_0490",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0491",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0492",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0493",
+      "source": "LogicInference",
+      "text": "水的沸点是 50 度",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "水的沸点是 100 度"
+    },
+    {
+      "id": "full_0494",
+      "source": "Manual",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0495",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0496",
+      "source": "LogiQA",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0497",
+      "source": "LogiQA",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0498",
+      "source": "Manual",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0499",
+      "source": "LogiQA",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0500",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0501",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含人身攻击谬误。",
+      "label": "hallucination",
+      "fallacy_type": "ad_hominem",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0502",
+      "source": "LogiQA",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0503",
+      "source": "LogiQA",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0504",
+      "source": "LogiQA",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0505",
+      "source": "Manual",
+      "text": "地球绕着太阳转。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0506",
+      "source": "Manual",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0507",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0508",
+      "source": "LogiQA",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0509",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0510",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0511",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0512",
+      "source": "LogiQA",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0513",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0514",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0515",
+      "source": "LogicInference",
+      "text": "水的沸点是 50 度",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "水的沸点是 100 度"
+    },
+    {
+      "id": "full_0516",
+      "source": "Manual",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0517",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0518",
+      "source": "LogicInference",
+      "text": "美国的首都是纽约",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "美国的首都是华盛顿特区"
+    },
+    {
+      "id": "full_0519",
+      "source": "LogiQA",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0520",
+      "source": "LogiQA",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0521",
+      "source": "LogiQA",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0522",
+      "source": "LogicInference",
+      "text": "地球是平的",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "地球是近似球形的"
+    },
+    {
+      "id": "full_0523",
+      "source": "Manual",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0524",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0525",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0526",
+      "source": "LogiQA",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0527",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0528",
+      "source": "Manual",
+      "text": "地球绕着太阳转。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0529",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含肯定后件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0530",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0531",
+      "source": "Manual",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0532",
+      "source": "Manual",
+      "text": "他品行不好。所以他的观点肯定是错的。",
+      "label": "hallucination",
+      "fallacy_type": "ad_hominem",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0533",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含诉诸权威谬误。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0534",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0535",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0536",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0537",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0538",
+      "source": "LogiQA",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0539",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0540",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0541",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0542",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0543",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含否定前件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0544",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0545",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0546",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含诉诸权威谬误。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0547",
+      "source": "LogiQA",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0548",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0549",
+      "source": "Manual",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0550",
+      "source": "LogicInference",
+      "text": "光速比声速慢",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "光速比声速快"
+    },
+    {
+      "id": "full_0551",
+      "source": "Manual",
+      "text": "地球绕着太阳转。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0552",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0553",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含诉诸权威谬误。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0554",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0555",
+      "source": "Manual",
+      "text": "地球绕着太阳转。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0556",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0557",
+      "source": "LogicInference",
+      "text": "地球是平的",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "地球是近似球形的"
+    },
+    {
+      "id": "full_0558",
+      "source": "Manual",
+      "text": "他品行不好。所以他的观点肯定是错的。",
+      "label": "hallucination",
+      "fallacy_type": "ad_hominem",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0559",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含人身攻击谬误。",
+      "label": "hallucination",
+      "fallacy_type": "ad_hominem",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0560",
+      "source": "LogiQA",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0561",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0562",
+      "source": "LogiQA",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0563",
+      "source": "LogiQA",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0564",
+      "source": "Manual",
+      "text": "他品行不好。所以他的观点肯定是错的。",
+      "label": "hallucination",
+      "fallacy_type": "ad_hominem",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0565",
+      "source": "LogiQA",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0566",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0567",
+      "source": "LogiQA",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0568",
+      "source": "LogiQA",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0569",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0570",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0571",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0572",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含人身攻击谬误。",
+      "label": "hallucination",
+      "fallacy_type": "ad_hominem",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0573",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0574",
+      "source": "Manual",
+      "text": "地球绕着太阳转。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0575",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0576",
+      "source": "Manual",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0577",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含轻率概括谬误。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0578",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0579",
+      "source": "Manual",
+      "text": "他品行不好。所以他的观点肯定是错的。",
+      "label": "hallucination",
+      "fallacy_type": "ad_hominem",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0580",
+      "source": "Manual",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "label": "hallucination",
+      "fallacy_type": "appeal_to_authority",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0581",
+      "source": "LogiQA",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0582",
+      "source": "LogicInference",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0583",
+      "source": "LogiQA",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0584",
+      "source": "Chain of Thought Hub",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0585",
+      "source": "Manual",
+      "text": "地球绕着太阳转。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0586",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含人身攻击谬误。",
+      "label": "hallucination",
+      "fallacy_type": "ad_hominem",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0587",
+      "source": "LogiQA",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0588",
+      "source": "Manual",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0589",
+      "source": "LogiQA",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0590",
+      "source": "Manual",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0591",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含否定前件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0592",
+      "source": "LogiQA",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0593",
+      "source": "LogicInference",
+      "text": "这个推理存在逻辑错误。",
+      "label": "hallucination",
+      "fallacy_type": "mixed",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0594",
+      "source": "LogiQA",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "fallacy_type": "hasty_generalization",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "full_0595",
+      "source": "LogicInference",
+      "text": "中国的首都是上海",
+      "label": "hallucination",
+      "fallacy_type": "factual_error",
+      "category": "factual_error",
+      "difficulty": "easy",
+      "correction": "中国的首都是北京"
+    },
+    {
+      "id": "full_0596",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含人身攻击谬误。",
+      "label": "hallucination",
+      "fallacy_type": "ad_hominem",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0597",
+      "source": "LogiQA",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "label": "hallucination",
+      "fallacy_type": "denying_antecedent",
+      "category": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "full_0598",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含虚假因果谬误。",
+      "label": "hallucination",
+      "fallacy_type": "false_cause",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0599",
+      "source": "Chain of Thought Hub",
+      "text": "推理过程包含肯定后件谬误。",
+      "label": "hallucination",
+      "fallacy_type": "affirming_consequent",
+      "category": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "full_0600",
+      "source": "Manual",
+      "text": "他品行不好。所以他的观点肯定是错的。",
+      "label": "hallucination",
+      "fallacy_type": "ad_hominem",
+      "category": "logical_fallacy",
+      "difficulty": "easy"
+    }
+  ]
+}

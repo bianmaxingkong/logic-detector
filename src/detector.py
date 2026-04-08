@@ -42,12 +42,12 @@ class LogicDetector:
     4. 事实检查器 (权重：0.1)
     """
     
-    def __init__(self, threshold: float = 0.5):
+    def __init__(self, threshold: float = 0.35):
         """
         初始化检测器
         
         Args:
-            threshold: 幻觉判定阈值 (默认 0.5)
+            threshold: 幻觉判定阈值 (默认 0.35，优化后)
         """
         self.threshold = threshold
         
@@ -78,9 +78,10 @@ class LogicDetector:
         """
         # 模块 1: 逻辑规则验证
         fallacies = self.logic_validator.validate(text)
-        logic_score = 1.0 - (len(fallacies) * 0.2)  # 每个谬误扣 0.2 分
+        has_fallacy = len(fallacies) > 0
+        logic_score = 0.0 if has_fallacy else 1.0  # 有谬误直接 0 分
         
-        # 模块 2: 推理链完整性检查
+        # 模块 2: 推理链完整性检查 (主模块，基于消融实验权重最高)
         chain_analysis = self.chain_checker.check_completeness(text, reasoning_type)
         chain_score = chain_analysis.completeness_score
         
@@ -90,18 +91,30 @@ class LogicDetector:
         
         # 模块 4: 事实检查
         factual_errors = self.fact_checker.get_factual_errors(text)
-        fact_score = 1.0 - (len(factual_errors) * 0.3)  # 每个错误扣 0.3 分
+        has_factual_error = len(factual_errors) > 0
+        fact_score = 0.0 if has_factual_error else 1.0  # 有错误直接 0 分
         
-        # 多模块融合 (加权平均)
-        overall_score = (
-            self.weights["logic"] * logic_score +
-            self.weights["chain"] * chain_score +
-            self.weights["consistency"] * consistency_score +
-            self.weights["fact"] * fact_score
-        )
+        # 多模块融合 (优化策略：模块 2 主导 + 其他模块 veto 权)
+        # 基于消融实验：模块 2 单独 75.5%，其他模块约 57%
+        # 策略：以模块 2 为主，其他模块只负责检出明确错误
         
-        # 判定是否幻觉
-        is_hallucination = overall_score < self.threshold
+        # 如果模块 2 判定不完整 (得分<0.5)，直接判定为幻觉
+        if chain_score < 0.5:
+            is_hallucination = True
+            overall_score = chain_score
+        # 否则，使用加权平均，但模块 2 权重更高
+        else:
+            overall_score = (
+                self.weights["logic"] * logic_score +
+                self.weights["chain"] * chain_score +
+                self.weights["consistency"] * consistency_score +
+                self.weights["fact"] * fact_score
+            )
+            is_hallucination = (overall_score < self.threshold)
+        
+        # 一票否决：有明确谬误或事实错误，直接判定为幻觉
+        if has_fallacy or has_factual_error:
+            is_hallucination = True
         
         # 生成解释
         explanation = self._generate_explanation(
@@ -111,7 +124,7 @@ class LogicDetector:
         return DetectionResult(
             is_hallucination=is_hallucination,
             confidence=1.0 - overall_score,
-            logic_fallacies=[f.value for f in fallacies],
+            logic_fallacies=[f.fallacy_type.value for f in fallacies],
             completeness_score=chain_score,
             is_consistent=consistency_score > 0.5,
             factual_errors=[e.claim for e in factual_errors],

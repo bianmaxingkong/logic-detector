@@ -434,3 +434,51 @@
     }
   }
 }
+
+  ,"unsupported_claims": {
+    "外星人明天会访问地球": false,
+    "吃这个药可以长生不老": false,
+    "明天一定会发生大地震": false,
+    "这个技术可以解决所有问题": false,
+    "所有人都喜欢这个产品": false,
+    "这是史上最好的产品": false,
+    "我从来不说谎": false,
+    "这个方案万无一失": false,
+    "保证 100% 赚钱": false,
+    "绝对没有副作用": false
+  },
+  "exaggerations": {
+    "所有人都同意": false,
+    "完全没有问题": false,
+    "绝对不可能失败": false,
+    "百分之百成功": false,
+    "史上最强": false,
+    "世界最佳": false,
+    "无敌": false,
+    "完美": false,
+    "永恒": false,
+    "无限": false
+  },
+  "contradictions": {
+    "这个句子是假的": false,
+    "我总是错的": false,
+    "我从来不相信任何人说的话": false,
+    "所有概括都是错误的": false,
+    "没有什么是绝对的": false,
+    "这句话是谎言": false,
+    "我正在说谎": false,
+    "不要相信任何人包括我": false
+  },
+  "common_sense": {
+    "太阳从东边升起": true,
+    "水往低处流": true,
+    "火是热的": true,
+    "冰是冷的": true,
+    "一天有 24 小时": true,
+    "一年有 365 天": true,
+    "人有两只眼睛": true,
+    "猫是哺乳动物": true,
+    "鱼生活在水里": true,
+    "鸟会飞": true
+  }
+}

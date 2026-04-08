@@ -1,0 +1,1360 @@
+{
+  "metadata": {
+    "name": "LOGICINF Test Set",
+    "version": "1.0",
+    "total_samples": 150,
+    "generation_date": "2026-04-02 15:28:31"
+  },
+  "test_cases": [
+    {
+      "id": "logicinf_0001",
+      "source": "LogicInference",
+      "text": "如果 A 则 B。如果 B 则 C。因此如果 A 则 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0002",
+      "source": "LogicInference",
+      "text": "P∨Q, ¬P, ∴Q",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0003",
+      "source": "LogicInference",
+      "text": "要么下雨要么晴天。没下雨。因此晴天。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0004",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0005",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。Q 为假。因此 P 为假。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0006",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0007",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。如果 Q 则 R。因此如果 P 则 R。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0008",
+      "source": "LogicInference",
+      "text": "P→Q, ¬Q, ∴¬P",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0009",
+      "source": "LogicInference",
+      "text": "P→Q, P, ∴Q",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0010",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。如果 Q 则 R。因此如果 P 则 R。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0011",
+      "source": "LogicInference",
+      "text": "P 或 Q。非 P。因此 Q。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0012",
+      "source": "LogicInference",
+      "text": "P 或 Q。非 P。因此 Q。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0013",
+      "source": "LogicInference",
+      "text": "P→Q, Q, ∴P",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_affirming_consequent",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0014",
+      "source": "LogicInference",
+      "text": "如果 A 则 B。如果 B 则 C。因此如果 A 则 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0015",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为假。因此 Q 为假。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_denying_antecedent",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0016",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。下雨了。因此地面会湿。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0017",
+      "source": "LogicInference",
+      "text": "如果 A 则 B。如果 B 则 C。因此如果 A 则 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0018",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面没湿。因此没下雨。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0019",
+      "source": "LogicInference",
+      "text": "P→Q, Q, ∴P",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_affirming_consequent",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0020",
+      "source": "LogicInference",
+      "text": "P→Q, Q, ∴P",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_affirming_consequent",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0021",
+      "source": "LogicInference",
+      "text": "P→Q, Q, ∴P",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_affirming_consequent",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0022",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。如果 Q 则 R。因此如果 P 则 R。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0023",
+      "source": "LogicInference",
+      "text": "P→Q, ¬Q, ∴¬P",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0024",
+      "source": "LogicInference",
+      "text": "P→Q, Q→R, ∴P→R",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0025",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。下雨了。因此地面会湿。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0026",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面没湿。因此没下雨。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0027",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0028",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。Q 为假。因此 P 为假。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0029",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。下雨了。因此地面会湿。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0030",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面没湿。因此没下雨。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0031",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。下雨了。因此地面会湿。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0032",
+      "source": "LogicInference",
+      "text": "P→Q, ¬P, ∴¬Q",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_denying_antecedent",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0033",
+      "source": "LogicInference",
+      "text": "P→Q, P, ∴Q",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0034",
+      "source": "LogicInference",
+      "text": "P→Q, Q→R, ∴P→R",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0035",
+      "source": "LogicInference",
+      "text": "P∨Q, ¬P, ∴Q",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0036",
+      "source": "LogicInference",
+      "text": "要么下雨要么晴天。没下雨。因此晴天。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0037",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面湿了。因此下雨了。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_affirming_consequent",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0038",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面没湿。因此没下雨。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0039",
+      "source": "LogicInference",
+      "text": "P→Q, ¬Q, ∴¬P",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0040",
+      "source": "LogicInference",
+      "text": "要么下雨要么晴天。没下雨。因此晴天。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0041",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。Q 为真。因此 P 为真。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_affirming_consequent",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0042",
+      "source": "LogicInference",
+      "text": "P→Q, Q→R, ∴P→R",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0043",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。如果 Q 则 R。因此如果 P 则 R。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0044",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。如果 Q 则 R。因此如果 P 则 R。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0045",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。下雨了。因此地面会湿。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0046",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面没湿。因此没下雨。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0047",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面没湿。因此没下雨。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0048",
+      "source": "LogicInference",
+      "text": "P∨Q, ¬P, ∴Q",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0049",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面湿了。因此下雨了。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_affirming_consequent",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0050",
+      "source": "LogicInference",
+      "text": "P 或 Q。非 P。因此 Q。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0051",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0052",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0053",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0054",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0055",
+      "source": "LogicInference",
+      "text": "要么下雨要么晴天。没下雨。因此晴天。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0056",
+      "source": "LogicInference",
+      "text": "P→Q, Q→R, ∴P→R",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0057",
+      "source": "LogicInference",
+      "text": "P→Q, P, ∴Q",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0058",
+      "source": "LogicInference",
+      "text": "P 或 Q。非 P。因此 Q。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0059",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0060",
+      "source": "LogicInference",
+      "text": "P→Q, Q→R, ∴P→R",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0061",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为假。因此 Q 为假。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_denying_antecedent",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0062",
+      "source": "LogicInference",
+      "text": "如果 A 则 B。如果 B 则 C。因此如果 A 则 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0063",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。下雨了。因此地面会湿。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0064",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。如果 Q 则 R。因此如果 P 则 R。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0065",
+      "source": "LogicInference",
+      "text": "P∨Q, ¬P, ∴Q",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0066",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面没湿。因此没下雨。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0067",
+      "source": "LogicInference",
+      "text": "P→Q, Q→R, ∴P→R",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0068",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面湿了。因此下雨了。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_affirming_consequent",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0069",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面没湿。因此没下雨。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0070",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面湿了。因此下雨了。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_affirming_consequent",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0071",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0072",
+      "source": "LogicInference",
+      "text": "如果 A 则 B。如果 B 则 C。因此如果 A 则 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0073",
+      "source": "LogicInference",
+      "text": "如果 A 则 B。如果 B 则 C。因此如果 A 则 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0074",
+      "source": "LogicInference",
+      "text": "如果 A 则 B。如果 B 则 C。因此如果 A 则 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0075",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。Q 为假。因此 P 为假。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0076",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面没湿。因此没下雨。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0077",
+      "source": "LogicInference",
+      "text": "要么下雨要么晴天。没下雨。因此晴天。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0078",
+      "source": "LogicInference",
+      "text": "P∨Q, ¬P, ∴Q",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0079",
+      "source": "LogicInference",
+      "text": "P→Q, Q→R, ∴P→R",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0080",
+      "source": "LogicInference",
+      "text": "P→Q, Q→R, ∴P→R",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0081",
+      "source": "LogicInference",
+      "text": "P→Q, ¬Q, ∴¬P",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0082",
+      "source": "LogicInference",
+      "text": "P→Q, Q, ∴P",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_affirming_consequent",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0083",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。如果 Q 则 R。因此如果 P 则 R。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0084",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。下雨了。因此地面会湿。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0085",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。如果 Q 则 R。因此如果 P 则 R。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0086",
+      "source": "LogicInference",
+      "text": "如果 A 则 B。如果 B 则 C。因此如果 A 则 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0087",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。Q 为假。因此 P 为假。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0088",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面没湿。因此没下雨。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0089",
+      "source": "LogicInference",
+      "text": "P→Q, P, ∴Q",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0090",
+      "source": "LogicInference",
+      "text": "P→Q, ¬Q, ∴¬P",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0091",
+      "source": "LogicInference",
+      "text": "P→Q, ¬Q, ∴¬P",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0092",
+      "source": "LogicInference",
+      "text": "P→Q, ¬Q, ∴¬P",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0093",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面没湿。因此没下雨。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0094",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0095",
+      "source": "LogicInference",
+      "text": "P→Q, P, ∴Q",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0096",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0097",
+      "source": "LogicInference",
+      "text": "如果 A 则 B。如果 B 则 C。因此如果 A 则 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0098",
+      "source": "LogicInference",
+      "text": "P→Q, ¬P, ∴¬Q",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_denying_antecedent",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0099",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。Q 为假。因此 P 为假。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0100",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面没湿。因此没下雨。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0101",
+      "source": "LogicInference",
+      "text": "P→Q, ¬Q, ∴¬P",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0102",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0103",
+      "source": "LogicInference",
+      "text": "如果 A 则 B。如果 B 则 C。因此如果 A 则 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0104",
+      "source": "LogicInference",
+      "text": "P→Q, Q→R, ∴P→R",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0105",
+      "source": "LogicInference",
+      "text": "P→Q, Q, ∴P",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_affirming_consequent",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0106",
+      "source": "LogicInference",
+      "text": "P→Q, Q→R, ∴P→R",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0107",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0108",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。没下雨。因此地面不会湿。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_denying_antecedent",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0109",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面湿了。因此下雨了。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_affirming_consequent",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0110",
+      "source": "LogicInference",
+      "text": "P→Q, P, ∴Q",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0111",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0112",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为假。因此 Q 为假。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_denying_antecedent",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0113",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。下雨了。因此地面会湿。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0114",
+      "source": "LogicInference",
+      "text": "如果 A 则 B。如果 B 则 C。因此如果 A 则 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0115",
+      "source": "LogicInference",
+      "text": "P∨Q, ¬P, ∴Q",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0116",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。没下雨。因此地面不会湿。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_denying_antecedent",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0117",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。没下雨。因此地面不会湿。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_denying_antecedent",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0118",
+      "source": "LogicInference",
+      "text": "如果 A 则 B。如果 B 则 C。因此如果 A 则 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0119",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0120",
+      "source": "LogicInference",
+      "text": "P→Q, P, ∴Q",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0121",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0122",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0123",
+      "source": "LogicInference",
+      "text": "如果 A 则 B。如果 B 则 C。因此如果 A 则 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0124",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。Q 为假。因此 P 为假。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0125",
+      "source": "LogicInference",
+      "text": "要么下雨要么晴天。没下雨。因此晴天。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0126",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0127",
+      "source": "LogicInference",
+      "text": "要么下雨要么晴天。没下雨。因此晴天。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0128",
+      "source": "LogicInference",
+      "text": "P 或 Q。非 P。因此 Q。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0129",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0130",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。下雨了。因此地面会湿。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0131",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0132",
+      "source": "LogicInference",
+      "text": "如果 A 则 B。如果 B 则 C。因此如果 A 则 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0133",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面没湿。因此没下雨。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0134",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面没湿。因此没下雨。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0135",
+      "source": "LogicInference",
+      "text": "P→Q, Q→R, ∴P→R",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0136",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0137",
+      "source": "LogicInference",
+      "text": "要么下雨要么晴天。没下雨。因此晴天。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0138",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0139",
+      "source": "LogicInference",
+      "text": "P→Q, Q, ∴P",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_affirming_consequent",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0140",
+      "source": "LogicInference",
+      "text": "P→Q, ¬P, ∴¬Q",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_denying_antecedent",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0141",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。如果 Q 则 R。因此如果 P 则 R。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0142",
+      "source": "LogicInference",
+      "text": "P→Q, Q→R, ∴P→R",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0143",
+      "source": "LogicInference",
+      "text": "P→Q, P, ∴Q",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0144",
+      "source": "LogicInference",
+      "text": "P→Q, Q→R, ∴P→R",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0145",
+      "source": "LogicInference",
+      "text": "P→Q, Q→R, ∴P→R",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0146",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。Q 为假。因此 P 为假。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0147",
+      "source": "LogicInference",
+      "text": "P→Q, ¬Q, ∴¬P",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0148",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面没湿。因此没下雨。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0149",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0150",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。Q 为假。因此 P 为假。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "medium"
+    }
+  ]
+}

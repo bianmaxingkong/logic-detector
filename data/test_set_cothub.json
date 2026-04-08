@@ -1,0 +1,1360 @@
+{
+  "metadata": {
+    "name": "COTHUB Test Set",
+    "version": "1.0",
+    "total_samples": 150,
+    "generation_date": "2026-04-02 15:28:31"
+  },
+  "test_cases": [
+    {
+      "id": "cothub_0001",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0002",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0003",
+      "source": "Chain of Thought Hub",
+      "text": "问题：小明比小红高。小红比小刚高。谁最高？\n思考：假设小明最高。\n答案：小明最高。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "wrong_assumption",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0004",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0005",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0006",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0007",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0008",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0009",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=15。\n答案：y=15",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "calculation_error",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0010",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0011",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0012",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0013",
+      "source": "Chain of Thought Hub",
+      "text": "问题：小明比小红高。小红比小刚高。谁最高？\n思考：假设小明最高。\n答案：小明最高。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "wrong_assumption",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0014",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0015",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0016",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0017",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0018",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0019",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有 A 都是 B。所有 B 都是 C。所有 A 都是 C 吗？\n思考：所有 A 都是 C。\n答案：是的。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "missing_step",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0020",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0021",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0022",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0023",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0024",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0025",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0026",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0027",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0028",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：有些猫不怕水。咪咪可能不怕。\n答案：不一定。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "inconsistent_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0029",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0030",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0031",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0032",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0033",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有 A 都是 B。所有 B 都是 C。所有 A 都是 C 吗？\n思考：假设 A、B、C 是相同的。\n答案：是的。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "wrong_assumption",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0034",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0035",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0036",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=15。\n答案：y=15",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "calculation_error",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0037",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0038",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0039",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0040",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0041",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：有些猫不怕水。咪咪可能不怕。\n答案：不一定。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "inconsistent_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0042",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0043",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0044",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0045",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0046",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0047",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0048",
+      "source": "Chain of Thought Hub",
+      "text": "问题：小明比小红高。小红比小刚高。谁最高？\n思考：假设小明最高。\n答案：小明最高。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "wrong_assumption",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0049",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0050",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有 A 都是 B。所有 B 都是 C。所有 A 都是 C 吗？\n思考：所有 A 都是 C。\n答案：是的。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "missing_step",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0051",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0052",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0053",
+      "source": "Chain of Thought Hub",
+      "text": "问题：小明比小红高。小红比小刚高。谁最高？\n思考：假设小明最高。\n答案：小明最高。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "wrong_assumption",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0054",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0055",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0056",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=2，y=3x+1，z=2y-1，求 z 的值。\n思考：x=2，z=2y-1=2(3×2+1)-1=13。\n答案：z=13",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "missing_step",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0057",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0058",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0059",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0060",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0061",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0062",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0063",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0064",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0065",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0066",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0067",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0068",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0069",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0070",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0071",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0072",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0073",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=15。\n答案：y=15",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "calculation_error",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0074",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0075",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0076",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=15。\n答案：y=15",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "calculation_error",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0077",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0078",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=2，y=3x+1，z=2y-1，求 z 的值。\n思考：x=2，z=2y-1=2(3×2+1)-1=13。\n答案：z=13",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "missing_step",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0079",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0080",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=2，y=3x+1，z=2y-1，求 z 的值。\n思考：x=2，z=2y-1=2(3×2+1)-1=13。\n答案：z=13",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "missing_step",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0081",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0082",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：有些猫不怕水。咪咪可能不怕。\n答案：不一定。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "inconsistent_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0083",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0084",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0085",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0086",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0087",
+      "source": "Chain of Thought Hub",
+      "text": "问题：3 个苹果加 5 个苹果等于几个？\n思考：3+5=9。\n答案：9 个苹果",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "calculation_error",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0088",
+      "source": "Chain of Thought Hub",
+      "text": "问题：小明比小红高。小红比小刚高。谁最高？\n思考：假设小明最高。\n答案：小明最高。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "wrong_assumption",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0089",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0090",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0091",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0092",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0093",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0094",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0095",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0096",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0097",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0098",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0099",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0100",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0101",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0102",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有鸟都会飞。企鹅是鸟。企鹅会飞吗？\n思考：所有鸟都会飞。企鹅是鸟。因此企鹅会飞。\n答案：是的，企鹅会飞。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "logic_jump",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0103",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x>5 且 y>x，那么 y>5 吗？\n思考：x>5，y>x。但是 y 可能小于 5。\n答案：不一定。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "inconsistent_reasoning",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0104",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有鸟都会飞。企鹅是鸟。企鹅会飞吗？\n思考：所有鸟都会飞。企鹅是鸟。因此企鹅会飞。\n答案：是的，企鹅会飞。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "logic_jump",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0105",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0106",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0107",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0108",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0109",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0110",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0111",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0112",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0113",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有 A 都是 B。所有 B 都是 C。所有 A 都是 C 吗？\n思考：假设 A、B、C 是相同的。\n答案：是的。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "wrong_assumption",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0114",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0115",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有 A 都是 B。所有 B 都是 C。所有 A 都是 C 吗？\n思考：假设 A、B、C 是相同的。\n答案：是的。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "wrong_assumption",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0116",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0117",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0118",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=15。\n答案：y=15",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "calculation_error",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0119",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0120",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x>5 且 y>x，那么 y>5 吗？\n思考：x>5，y>x。但是 y 可能小于 5。\n答案：不一定。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "inconsistent_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0121",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：有些猫不怕水。咪咪可能不怕。\n答案：不一定。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "inconsistent_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0122",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0123",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=2，y=3x+1，z=2y-1，求 z 的值。\n思考：x=2，z=2y-1=2(3×2+1)-1=13。\n答案：z=13",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "missing_step",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0124",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0125",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0126",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0127",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0128",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0129",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0130",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0131",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0132",
+      "source": "Chain of Thought Hub",
+      "text": "问题：3 个苹果加 5 个苹果等于几个？\n思考：3+5=9。\n答案：9 个苹果",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "calculation_error",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0133",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0134",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0135",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有鸟都会飞。企鹅是鸟。企鹅会飞吗？\n思考：所有鸟都会飞。企鹅是鸟。因此企鹅会飞。\n答案：是的，企鹅会飞。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "logic_jump",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0136",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=15。\n答案：y=15",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "calculation_error",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0137",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0138",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0139",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0140",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0141",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0142",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果下雨，地面会湿。地面湿了。所以下雨了吗？\n思考：地面湿了。如果下雨地面会湿。因此下雨了。\n答案：是的，下雨了。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "logic_jump",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0143",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0144",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0145",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0146",
+      "source": "Chain of Thought Hub",
+      "text": "问题：3 个苹果加 5 个苹果等于几个？\n思考：3+5=9。\n答案：9 个苹果",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "calculation_error",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0147",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0148",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0149",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0150",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    }
+  ]
+}

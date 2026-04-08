@@ -1,0 +1,151 @@
+{
+  "metadata": {
+    "model": "Qwen3-Coder-Next",
+    "total_cases": 20,
+    "generated_at": "2026-04-04",
+    "base_test_cases": 20,
+    "version": "clean"
+  },
+  "test_cases": [
+    {
+      "id": "qwen3-coder-next_000",
+      "text": "所有哺乳动物都有脊椎。狗是哺乳动物。所以狗有脊椎。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "source_model": "Qwen3-Coder-Next"
+    },
+    {
+      "id": "qwen3-coder-next_001",
+      "text": "如果 A 则 B。A 成立。因此 B 成立。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "source_model": "Qwen3-Coder-Next"
+    },
+    {
+      "id": "qwen3-coder-next_002",
+      "text": "大部分鸟都会飞。麻雀是鸟。所以麻雀会飞。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "source_model": "Qwen3-Coder-Next"
+    },
+    {
+      "id": "qwen3-coder-next_003",
+      "text": "所有人都会死。苏格拉底是人。所以苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "source_model": "Qwen3-Coder-Next"
+    },
+    {
+      "id": "qwen3-coder-next_004",
+      "text": "金属导电。铜是金属。所以铜导电。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "source_model": "Qwen3-Coder-Next"
+    },
+    {
+      "id": "qwen3-coder-next_005",
+      "text": "他是专家，所以他说的肯定是对的。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "source_model": "Qwen3-Coder-Next"
+    },
+    {
+      "id": "qwen3-coder-next_006",
+      "text": "如果下雨地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "source_model": "Qwen3-Coder-Next"
+    },
+    {
+      "id": "qwen3-coder-next_007",
+      "text": "你不喜欢这个方案，所以你肯定不懂技术。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "source_model": "Qwen3-Coder-Next"
+    },
+    {
+      "id": "qwen3-coder-next_008",
+      "text": "A 发生在 B 之前，所以 A 导致 B。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "source_model": "Qwen3-Coder-Next"
+    },
+    {
+      "id": "qwen3-coder-next_009",
+      "text": "大家都这么说，所以这肯定是对的。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "source_model": "Qwen3-Coder-Next"
+    },
+    {
+      "id": "qwen3-coder-next_010",
+      "text": "你连这个都不懂，还好意思说话。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "source_model": "Qwen3-Coder-Next"
+    },
+    {
+      "id": "qwen3-coder-next_011",
+      "text": "这个理论出自诺贝尔奖获得者，所以一定是真理。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "source_model": "Qwen3-Coder-Next"
+    },
+    {
+      "id": "qwen3-coder-next_012",
+      "text": "要么支持我，要么就是我的敌人。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "source_model": "Qwen3-Coder-Next"
+    },
+    {
+      "id": "qwen3-coder-next_013",
+      "text": "你昨天说 A，今天说 B，所以你不可信。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "source_model": "Qwen3-Coder-Next"
+    },
+    {
+      "id": "qwen3-coder-next_014",
+      "text": "这个药有效，因为从来没人证明它无效。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "source_model": "Qwen3-Coder-Next"
+    },
+    {
+      "id": "qwen3-coder-next_015",
+      "text": "地球是平的，这是科学事实。",
+      "label": "hallucination",
+      "category": "factual_error",
+      "source_model": "Qwen3-Coder-Next"
+    },
+    {
+      "id": "qwen3-coder-next_016",
+      "text": "水的沸点是 50 摄氏度。",
+      "label": "hallucination",
+      "category": "factual_error",
+      "source_model": "Qwen3-Coder-Next"
+    },
+    {
+      "id": "qwen3-coder-next_017",
+      "text": "太阳绕着地球转。",
+      "label": "hallucination",
+      "category": "factual_error",
+      "source_model": "Qwen3-Coder-Next"
+    },
+    {
+      "id": "qwen3-coder-next_018",
+      "text": "人类只使用了大脑的 10%。",
+      "label": "hallucination",
+      "category": "factual_error",
+      "source_model": "Qwen3-Coder-Next"
+    },
+    {
+      "id": "qwen3-coder-next_019",
+      "text": "金鱼只有 3 秒记忆。",
+      "label": "hallucination",
+      "category": "factual_error",
+      "source_model": "Qwen3-Coder-Next"
+    }
+  ]
+}

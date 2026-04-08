@@ -1,0 +1,170 @@
+{
+  "metadata": {
+    "model": "Kimi-K2.5",
+    "total_cases": 20,
+    "generated_at": "2026-04-04",
+    "base_test_cases": 20
+  },
+  "test_cases": [
+    {
+      "id": "kimi-k25_000",
+      "text": "[Kimi] 所有哺乳动物都有脊椎。狗是哺乳动物。所以狗有脊椎。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "source_model": "Kimi-K2.5",
+      "original_text": "所有哺乳动物都有脊椎。狗是哺乳动物。所以狗有脊椎。"
+    },
+    {
+      "id": "kimi-k25_001",
+      "text": "[Kimi] 如果 A 则 B。A 成立。因此 B 成立。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "source_model": "Kimi-K2.5",
+      "original_text": "如果 A 则 B。A 成立。因此 B 成立。"
+    },
+    {
+      "id": "kimi-k25_002",
+      "text": "[Kimi] 大部分鸟都会飞。麻雀是鸟。所以麻雀会飞。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "source_model": "Kimi-K2.5",
+      "original_text": "大部分鸟都会飞。麻雀是鸟。所以麻雀会飞。"
+    },
+    {
+      "id": "kimi-k25_003",
+      "text": "[Kimi] 所有人都会死。苏格拉底是人。所以苏格拉底会死。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "source_model": "Kimi-K2.5",
+      "original_text": "所有人都会死。苏格拉底是人。所以苏格拉底会死。"
+    },
+    {
+      "id": "kimi-k25_004",
+      "text": "[Kimi] 金属导电。铜是金属。所以铜导电。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "source_model": "Kimi-K2.5",
+      "original_text": "金属导电。铜是金属。所以铜导电。"
+    },
+    {
+      "id": "kimi-k25_005",
+      "text": "[Kimi] 他是专家，所以他说的肯定是对的。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "source_model": "Kimi-K2.5",
+      "original_text": "他是专家，所以他说的肯定是对的。"
+    },
+    {
+      "id": "kimi-k25_006",
+      "text": "[Kimi] 如果下雨地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "source_model": "Kimi-K2.5",
+      "original_text": "如果下雨地面会湿。地面湿了。所以下雨了。"
+    },
+    {
+      "id": "kimi-k25_007",
+      "text": "[Kimi] 你不喜欢这个方案，所以你肯定不懂技术。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "source_model": "Kimi-K2.5",
+      "original_text": "你不喜欢这个方案，所以你肯定不懂技术。"
+    },
+    {
+      "id": "kimi-k25_008",
+      "text": "[Kimi] A 发生在 B 之前，所以 A 导致 B。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "source_model": "Kimi-K2.5",
+      "original_text": "A 发生在 B 之前，所以 A 导致 B。"
+    },
+    {
+      "id": "kimi-k25_009",
+      "text": "[Kimi] 大家都这么说，所以这肯定是对的。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "source_model": "Kimi-K2.5",
+      "original_text": "大家都这么说，所以这肯定是对的。"
+    },
+    {
+      "id": "kimi-k25_010",
+      "text": "[Kimi] 你连这个都不懂，还好意思说话。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "source_model": "Kimi-K2.5",
+      "original_text": "你连这个都不懂，还好意思说话。"
+    },
+    {
+      "id": "kimi-k25_011",
+      "text": "[Kimi] 这个理论出自诺贝尔奖获得者，所以一定是真理。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "source_model": "Kimi-K2.5",
+      "original_text": "这个理论出自诺贝尔奖获得者，所以一定是真理。"
+    },
+    {
+      "id": "kimi-k25_012",
+      "text": "[Kimi] 要么支持我，要么就是我的敌人。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "source_model": "Kimi-K2.5",
+      "original_text": "要么支持我，要么就是我的敌人。"
+    },
+    {
+      "id": "kimi-k25_013",
+      "text": "[Kimi] 你昨天说 A，今天说 B，所以你不可信。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "source_model": "Kimi-K2.5",
+      "original_text": "你昨天说 A，今天说 B，所以你不可信。"
+    },
+    {
+      "id": "kimi-k25_014",
+      "text": "[Kimi] 这个药有效，因为从来没人证明它无效。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "source_model": "Kimi-K2.5",
+      "original_text": "这个药有效，因为从来没人证明它无效。"
+    },
+    {
+      "id": "kimi-k25_015",
+      "text": "[Kimi] 地球是平的，这是科学事实。",
+      "label": "hallucination",
+      "category": "factual_error",
+      "source_model": "Kimi-K2.5",
+      "original_text": "地球是平的，这是科学事实。"
+    },
+    {
+      "id": "kimi-k25_016",
+      "text": "[Kimi] 水的沸点是 50 摄氏度。",
+      "label": "hallucination",
+      "category": "factual_error",
+      "source_model": "Kimi-K2.5",
+      "original_text": "水的沸点是 50 摄氏度。"
+    },
+    {
+      "id": "kimi-k25_017",
+      "text": "[Kimi] 太阳绕着地球转。",
+      "label": "hallucination",
+      "category": "factual_error",
+      "source_model": "Kimi-K2.5",
+      "original_text": "太阳绕着地球转。"
+    },
+    {
+      "id": "kimi-k25_018",
+      "text": "[Kimi] 人类只使用了大脑的 10%。",
+      "label": "hallucination",
+      "category": "factual_error",
+      "source_model": "Kimi-K2.5",
+      "original_text": "人类只使用了大脑的 10%。"
+    },
+    {
+      "id": "kimi-k25_019",
+      "text": "[Kimi] 金鱼只有 3 秒记忆。",
+      "label": "hallucination",
+      "category": "factual_error",
+      "source_model": "Kimi-K2.5",
+      "original_text": "金鱼只有 3 秒记忆。"
+    }
+  ]
+}

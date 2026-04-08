@@ -1,0 +1,910 @@
+{
+  "metadata": {
+    "name": "LLMCHECK Test Set",
+    "version": "1.0",
+    "total_samples": 100,
+    "generation_date": "2026-04-02 15:28:31"
+  },
+  "test_cases": [
+    {
+      "id": "llmcheck_0001",
+      "source": "LLM-Check (DeepMind)",
+      "text": "外星人明天会访问地球。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "unsupported_claim",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0002",
+      "source": "LLM-Check (DeepMind)",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0003",
+      "source": "LLM-Check (DeepMind)",
+      "text": "美国的首都是华盛顿特区。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0004",
+      "source": "LLM-Check (DeepMind)",
+      "text": "外星人明天会访问地球。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "unsupported_claim",
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0005",
+      "source": "LLM-Check (DeepMind)",
+      "text": "地球是近似球形的。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0006",
+      "source": "LLM-Check (DeepMind)",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0007",
+      "source": "LLM-Check (DeepMind)",
+      "text": "水的沸点是 50 摄氏度。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "factual_error",
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0008",
+      "source": "LLM-Check (DeepMind)",
+      "text": "美国的首都是华盛顿特区。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0009",
+      "source": "LLM-Check (DeepMind)",
+      "text": "所有猫都是哺乳动物。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0010",
+      "source": "LLM-Check (DeepMind)",
+      "text": "中国的首都是北京。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0011",
+      "source": "LLM-Check (DeepMind)",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0012",
+      "source": "LLM-Check (DeepMind)",
+      "text": "他品行不好。所以他的观点肯定是错的。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0013",
+      "source": "LLM-Check (DeepMind)",
+      "text": "美国的首都是华盛顿特区。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0014",
+      "source": "LLM-Check (DeepMind)",
+      "text": "美国的首都是华盛顿特区。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0015",
+      "source": "LLM-Check (DeepMind)",
+      "text": "中国的首都是上海。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "factual_error",
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0016",
+      "source": "LLM-Check (DeepMind)",
+      "text": "吃这个药可以长生不老。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "unsupported_claim",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0017",
+      "source": "LLM-Check (DeepMind)",
+      "text": "中国的首都是北京。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0018",
+      "source": "LLM-Check (DeepMind)",
+      "text": "明天一定会发生大地震。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "unsupported_claim",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0019",
+      "source": "LLM-Check (DeepMind)",
+      "text": "水的沸点是 100 摄氏度。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0020",
+      "source": "LLM-Check (DeepMind)",
+      "text": "地球是近似球形的。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0021",
+      "source": "LLM-Check (DeepMind)",
+      "text": "美国的首都是华盛顿特区。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0022",
+      "source": "LLM-Check (DeepMind)",
+      "text": "地球是近似球形的。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0023",
+      "source": "LLM-Check (DeepMind)",
+      "text": "光速比声速慢。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "factual_error",
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0024",
+      "source": "LLM-Check (DeepMind)",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0025",
+      "source": "LLM-Check (DeepMind)",
+      "text": "所有猫都是哺乳动物。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0026",
+      "source": "LLM-Check (DeepMind)",
+      "text": "如果 x=5，那么 2x=10。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0027",
+      "source": "LLM-Check (DeepMind)",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0028",
+      "source": "LLM-Check (DeepMind)",
+      "text": "美国的首都是华盛顿特区。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0029",
+      "source": "LLM-Check (DeepMind)",
+      "text": "吃这个药可以长生不老。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "unsupported_claim",
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0030",
+      "source": "LLM-Check (DeepMind)",
+      "text": "光速比声速快。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0031",
+      "source": "LLM-Check (DeepMind)",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0032",
+      "source": "LLM-Check (DeepMind)",
+      "text": "地球是近似球形的。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0033",
+      "source": "LLM-Check (DeepMind)",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0034",
+      "source": "LLM-Check (DeepMind)",
+      "text": "吃这个药可以长生不老。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "unsupported_claim",
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0035",
+      "source": "LLM-Check (DeepMind)",
+      "text": "吃这个药可以长生不老。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "unsupported_claim",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0036",
+      "source": "LLM-Check (DeepMind)",
+      "text": "中国的首都是北京。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0037",
+      "source": "LLM-Check (DeepMind)",
+      "text": "这是史上最好的产品。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "exaggeration",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0038",
+      "source": "LLM-Check (DeepMind)",
+      "text": "中国的首都是北京。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0039",
+      "source": "LLM-Check (DeepMind)",
+      "text": "水的沸点是 50 摄氏度。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "factual_error",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0040",
+      "source": "LLM-Check (DeepMind)",
+      "text": "中国的首都是北京。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0041",
+      "source": "LLM-Check (DeepMind)",
+      "text": "中国的首都是北京。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0042",
+      "source": "LLM-Check (DeepMind)",
+      "text": "光速比声速快。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0043",
+      "source": "LLM-Check (DeepMind)",
+      "text": "光速比声速快。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0044",
+      "source": "LLM-Check (DeepMind)",
+      "text": "水的沸点是 50 摄氏度。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "factual_error",
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0045",
+      "source": "LLM-Check (DeepMind)",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0046",
+      "source": "LLM-Check (DeepMind)",
+      "text": "光速比声速慢。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "factual_error",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0047",
+      "source": "LLM-Check (DeepMind)",
+      "text": "地球是近似球形的。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0048",
+      "source": "LLM-Check (DeepMind)",
+      "text": "所有猫都是哺乳动物。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0049",
+      "source": "LLM-Check (DeepMind)",
+      "text": "我从来不说谎。我刚才说的是谎话。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0050",
+      "source": "LLM-Check (DeepMind)",
+      "text": "地球是近似球形的。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0051",
+      "source": "LLM-Check (DeepMind)",
+      "text": "光速比声速快。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0052",
+      "source": "LLM-Check (DeepMind)",
+      "text": "所有猫都是哺乳动物。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0053",
+      "source": "LLM-Check (DeepMind)",
+      "text": "光速比声速快。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0054",
+      "source": "LLM-Check (DeepMind)",
+      "text": "光速比声速快。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0055",
+      "source": "LLM-Check (DeepMind)",
+      "text": "地球是近似球形的。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0056",
+      "source": "LLM-Check (DeepMind)",
+      "text": "所有猫都是哺乳动物。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0057",
+      "source": "LLM-Check (DeepMind)",
+      "text": "中国的首都是北京。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0058",
+      "source": "LLM-Check (DeepMind)",
+      "text": "外星人明天会访问地球。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "unsupported_claim",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0059",
+      "source": "LLM-Check (DeepMind)",
+      "text": "吃这个药可以长生不老。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "unsupported_claim",
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0060",
+      "source": "LLM-Check (DeepMind)",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0061",
+      "source": "LLM-Check (DeepMind)",
+      "text": "所有猫都是哺乳动物。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0062",
+      "source": "LLM-Check (DeepMind)",
+      "text": "我从来不说谎。我刚才说的是谎话。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "contradiction",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0063",
+      "source": "LLM-Check (DeepMind)",
+      "text": "如果 x=5，那么 2x=10。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0064",
+      "source": "LLM-Check (DeepMind)",
+      "text": "所有猫都是哺乳动物。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0065",
+      "source": "LLM-Check (DeepMind)",
+      "text": "地球是近似球形的。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0066",
+      "source": "LLM-Check (DeepMind)",
+      "text": "地球是近似球形的。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0067",
+      "source": "LLM-Check (DeepMind)",
+      "text": "水的沸点是 50 摄氏度。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "factual_error",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0068",
+      "source": "LLM-Check (DeepMind)",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0069",
+      "source": "LLM-Check (DeepMind)",
+      "text": "所有猫都是哺乳动物。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0070",
+      "source": "LLM-Check (DeepMind)",
+      "text": "地球是平的。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "factual_error",
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0071",
+      "source": "LLM-Check (DeepMind)",
+      "text": "中国的首都是北京。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0072",
+      "source": "LLM-Check (DeepMind)",
+      "text": "光速比声速慢。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "factual_error",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0073",
+      "source": "LLM-Check (DeepMind)",
+      "text": "所有猫都是哺乳动物。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0074",
+      "source": "LLM-Check (DeepMind)",
+      "text": "美国的首都是华盛顿特区。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0075",
+      "source": "LLM-Check (DeepMind)",
+      "text": "如果 x=5，那么 2x=10。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0076",
+      "source": "LLM-Check (DeepMind)",
+      "text": "我总是错的。这句话也是错的。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0077",
+      "source": "LLM-Check (DeepMind)",
+      "text": "水的沸点是 100 摄氏度。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0078",
+      "source": "LLM-Check (DeepMind)",
+      "text": "美国的首都是华盛顿特区。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0079",
+      "source": "LLM-Check (DeepMind)",
+      "text": "中国的首都是上海。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "factual_error",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0080",
+      "source": "LLM-Check (DeepMind)",
+      "text": "所有人都喜欢这个。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "exaggeration",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0081",
+      "source": "LLM-Check (DeepMind)",
+      "text": "水的沸点是 100 摄氏度。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0082",
+      "source": "LLM-Check (DeepMind)",
+      "text": "他品行不好。所以他的观点肯定是错的。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0083",
+      "source": "LLM-Check (DeepMind)",
+      "text": "美国的首都是华盛顿特区。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0084",
+      "source": "LLM-Check (DeepMind)",
+      "text": "地球是近似球形的。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0085",
+      "source": "LLM-Check (DeepMind)",
+      "text": "我总是错的。这句话也是错的。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0086",
+      "source": "LLM-Check (DeepMind)",
+      "text": "如果 x=5，那么 2x=10。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0087",
+      "source": "LLM-Check (DeepMind)",
+      "text": "这个句子是假的。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "contradiction",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0088",
+      "source": "LLM-Check (DeepMind)",
+      "text": "地球是近似球形的。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0089",
+      "source": "LLM-Check (DeepMind)",
+      "text": "光速比声速慢。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "factual_error",
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0090",
+      "source": "LLM-Check (DeepMind)",
+      "text": "地球是平的。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "factual_error",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0091",
+      "source": "LLM-Check (DeepMind)",
+      "text": "我从来不说谎。我刚才说的是谎话。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0092",
+      "source": "LLM-Check (DeepMind)",
+      "text": "中国的首都是北京。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0093",
+      "source": "LLM-Check (DeepMind)",
+      "text": "水的沸点是 100 摄氏度。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0094",
+      "source": "LLM-Check (DeepMind)",
+      "text": "这是史上最好的产品。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "exaggeration",
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0095",
+      "source": "LLM-Check (DeepMind)",
+      "text": "水的沸点是 100 摄氏度。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0096",
+      "source": "LLM-Check (DeepMind)",
+      "text": "所有猫都是哺乳动物。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0097",
+      "source": "LLM-Check (DeepMind)",
+      "text": "水的沸点是 100 摄氏度。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0098",
+      "source": "LLM-Check (DeepMind)",
+      "text": "水的沸点是 100 摄氏度。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0099",
+      "source": "LLM-Check (DeepMind)",
+      "text": "所有猫都是哺乳动物。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0100",
+      "source": "LLM-Check (DeepMind)",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "logical_fallacy",
+      "difficulty": "easy"
+    }
+  ]
+}

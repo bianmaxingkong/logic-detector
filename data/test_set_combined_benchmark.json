@@ -1,0 +1,3616 @@
+{
+  "metadata": {
+    "name": "Combined Benchmark Test Set",
+    "version": "1.0",
+    "description": "Chain of Thought Hub + LogicInference + LLM-Check 合并数据集",
+    "total_samples": 400,
+    "sources": {
+      "Chain of Thought Hub": 150,
+      "LogicInference": 150,
+      "LLM-Check": 100
+    },
+    "generation_date": "2026-04-02 15:28:31"
+  },
+  "test_cases": [
+    {
+      "id": "llmcheck_0095",
+      "source": "LLM-Check (DeepMind)",
+      "text": "水的沸点是 100 摄氏度。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0072",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0106",
+      "source": "LogicInference",
+      "text": "P→Q, Q→R, ∴P→R",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0114",
+      "source": "LogicInference",
+      "text": "如果 A 则 B。如果 B 则 C。因此如果 A 则 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0115",
+      "source": "LogicInference",
+      "text": "P∨Q, ¬P, ∴Q",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0092",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0103",
+      "source": "LogicInference",
+      "text": "如果 A 则 B。如果 B 则 C。因此如果 A 则 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0145",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0081",
+      "source": "LogicInference",
+      "text": "P→Q, ¬Q, ∴¬P",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0001",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0107",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0086",
+      "source": "LogicInference",
+      "text": "如果 A 则 B。如果 B 则 C。因此如果 A 则 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0054",
+      "source": "LLM-Check (DeepMind)",
+      "text": "光速比声速快。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0046",
+      "source": "LLM-Check (DeepMind)",
+      "text": "光速比声速慢。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "factual_error",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0038",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面没湿。因此没下雨。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0057",
+      "source": "LogicInference",
+      "text": "P→Q, P, ∴Q",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0079",
+      "source": "LLM-Check (DeepMind)",
+      "text": "中国的首都是上海。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "factual_error",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0026",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0037",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面湿了。因此下雨了。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_affirming_consequent",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0052",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0018",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0050",
+      "source": "LogicInference",
+      "text": "P 或 Q。非 P。因此 Q。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0003",
+      "source": "Chain of Thought Hub",
+      "text": "问题：小明比小红高。小红比小刚高。谁最高？\n思考：假设小明最高。\n答案：小明最高。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "wrong_assumption",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0029",
+      "source": "LLM-Check (DeepMind)",
+      "text": "吃这个药可以长生不老。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "unsupported_claim",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0121",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：有些猫不怕水。咪咪可能不怕。\n答案：不一定。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "inconsistent_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0043",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0058",
+      "source": "LLM-Check (DeepMind)",
+      "text": "外星人明天会访问地球。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "unsupported_claim",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0072",
+      "source": "LLM-Check (DeepMind)",
+      "text": "光速比声速慢。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "factual_error",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0064",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0028",
+      "source": "LLM-Check (DeepMind)",
+      "text": "美国的首都是华盛顿特区。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0083",
+      "source": "LLM-Check (DeepMind)",
+      "text": "美国的首都是华盛顿特区。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0068",
+      "source": "LLM-Check (DeepMind)",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0106",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0008",
+      "source": "LLM-Check (DeepMind)",
+      "text": "美国的首都是华盛顿特区。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0133",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0125",
+      "source": "LogicInference",
+      "text": "要么下雨要么晴天。没下雨。因此晴天。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0017",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0143",
+      "source": "LogicInference",
+      "text": "P→Q, P, ∴Q",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0059",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0084",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。下雨了。因此地面会湿。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0007",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0023",
+      "source": "LLM-Check (DeepMind)",
+      "text": "光速比声速慢。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "factual_error",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0094",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0134",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0094",
+      "source": "LLM-Check (DeepMind)",
+      "text": "这是史上最好的产品。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "exaggeration",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0008",
+      "source": "LogicInference",
+      "text": "P→Q, ¬Q, ∴¬P",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0121",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0105",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0069",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0099",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。Q 为假。因此 P 为假。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0044",
+      "source": "LLM-Check (DeepMind)",
+      "text": "水的沸点是 50 摄氏度。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "factual_error",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0118",
+      "source": "LogicInference",
+      "text": "如果 A 则 B。如果 B 则 C。因此如果 A 则 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0149",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0105",
+      "source": "LogicInference",
+      "text": "P→Q, Q, ∴P",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_affirming_consequent",
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0087",
+      "source": "LLM-Check (DeepMind)",
+      "text": "这个句子是假的。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "contradiction",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0024",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0098",
+      "source": "LLM-Check (DeepMind)",
+      "text": "水的沸点是 100 摄氏度。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0134",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面没湿。因此没下雨。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0076",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面没湿。因此没下雨。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0079",
+      "source": "LogicInference",
+      "text": "P→Q, Q→R, ∴P→R",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0062",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0074",
+      "source": "LogicInference",
+      "text": "如果 A 则 B。如果 B 则 C。因此如果 A 则 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0100",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0064",
+      "source": "LLM-Check (DeepMind)",
+      "text": "所有猫都是哺乳动物。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0045",
+      "source": "LLM-Check (DeepMind)",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0012",
+      "source": "LogicInference",
+      "text": "P 或 Q。非 P。因此 Q。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0058",
+      "source": "LogicInference",
+      "text": "P 或 Q。非 P。因此 Q。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0033",
+      "source": "LogicInference",
+      "text": "P→Q, P, ∴Q",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0027",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0139",
+      "source": "LogicInference",
+      "text": "P→Q, Q, ∴P",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_affirming_consequent",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0007",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。如果 Q 则 R。因此如果 P 则 R。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0013",
+      "source": "LogicInference",
+      "text": "P→Q, Q, ∴P",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_affirming_consequent",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0142",
+      "source": "LogicInference",
+      "text": "P→Q, Q→R, ∴P→R",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0085",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0108",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0003",
+      "source": "LLM-Check (DeepMind)",
+      "text": "美国的首都是华盛顿特区。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0025",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0119",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0095",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0018",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面没湿。因此没下雨。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0071",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0124",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0096",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0142",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果下雨，地面会湿。地面湿了。所以下雨了吗？\n思考：地面湿了。如果下雨地面会湿。因此下雨了。\n答案：是的，下雨了。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "logic_jump",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0099",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0077",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0086",
+      "source": "LLM-Check (DeepMind)",
+      "text": "如果 x=5，那么 2x=10。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0111",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0091",
+      "source": "LogicInference",
+      "text": "P→Q, ¬Q, ∴¬P",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0021",
+      "source": "LLM-Check (DeepMind)",
+      "text": "美国的首都是华盛顿特区。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0037",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0053",
+      "source": "LLM-Check (DeepMind)",
+      "text": "光速比声速快。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0101",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0009",
+      "source": "LLM-Check (DeepMind)",
+      "text": "所有猫都是哺乳动物。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0123",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=2，y=3x+1，z=2y-1，求 z 的值。\n思考：x=2，z=2y-1=2(3×2+1)-1=13。\n答案：z=13",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "missing_step",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0060",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0057",
+      "source": "LLM-Check (DeepMind)",
+      "text": "中国的首都是北京。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0010",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0050",
+      "source": "LLM-Check (DeepMind)",
+      "text": "地球是近似球形的。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0130",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0097",
+      "source": "LLM-Check (DeepMind)",
+      "text": "水的沸点是 100 摄氏度。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0060",
+      "source": "LLM-Check (DeepMind)",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0047",
+      "source": "LLM-Check (DeepMind)",
+      "text": "地球是近似球形的。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0100",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面没湿。因此没下雨。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0039",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0120",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x>5 且 y>x，那么 y>5 吗？\n思考：x>5，y>x。但是 y 可能小于 5。\n答案：不一定。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "inconsistent_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0026",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面没湿。因此没下雨。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0138",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0092",
+      "source": "LLM-Check (DeepMind)",
+      "text": "中国的首都是北京。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0150",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0132",
+      "source": "LogicInference",
+      "text": "如果 A 则 B。如果 B 则 C。因此如果 A 则 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0095",
+      "source": "LogicInference",
+      "text": "P→Q, P, ∴Q",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0028",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。Q 为假。因此 P 为假。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0054",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0055",
+      "source": "LLM-Check (DeepMind)",
+      "text": "地球是近似球形的。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0130",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。下雨了。因此地面会湿。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0082",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：有些猫不怕水。咪咪可能不怕。\n答案：不一定。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "inconsistent_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0083",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0126",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0113",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有 A 都是 B。所有 B 都是 C。所有 A 都是 C 吗？\n思考：假设 A、B、C 是相同的。\n答案：是的。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "wrong_assumption",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0048",
+      "source": "LogicInference",
+      "text": "P∨Q, ¬P, ∴Q",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0088",
+      "source": "Chain of Thought Hub",
+      "text": "问题：小明比小红高。小红比小刚高。谁最高？\n思考：假设小明最高。\n答案：小明最高。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "wrong_assumption",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0058",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0148",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面没湿。因此没下雨。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0112",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为假。因此 Q 为假。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_denying_antecedent",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0073",
+      "source": "LogicInference",
+      "text": "如果 A 则 B。如果 B 则 C。因此如果 A 则 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0097",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0119",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0127",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0046",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0070",
+      "source": "LLM-Check (DeepMind)",
+      "text": "地球是平的。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "factual_error",
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0063",
+      "source": "LLM-Check (DeepMind)",
+      "text": "如果 x=5，那么 2x=10。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0045",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。下雨了。因此地面会湿。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0035",
+      "source": "LLM-Check (DeepMind)",
+      "text": "吃这个药可以长生不老。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "unsupported_claim",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0053",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0139",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0147",
+      "source": "LogicInference",
+      "text": "P→Q, ¬Q, ∴¬P",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0061",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0056",
+      "source": "LLM-Check (DeepMind)",
+      "text": "所有猫都是哺乳动物。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0049",
+      "source": "LLM-Check (DeepMind)",
+      "text": "我从来不说谎。我刚才说的是谎话。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "contradiction",
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0091",
+      "source": "LLM-Check (DeepMind)",
+      "text": "我从来不说谎。我刚才说的是谎话。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0037",
+      "source": "LLM-Check (DeepMind)",
+      "text": "这是史上最好的产品。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "exaggeration",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0101",
+      "source": "LogicInference",
+      "text": "P→Q, ¬Q, ∴¬P",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0090",
+      "source": "LLM-Check (DeepMind)",
+      "text": "地球是平的。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "factual_error",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0087",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。Q 为假。因此 P 为假。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0019",
+      "source": "LLM-Check (DeepMind)",
+      "text": "水的沸点是 100 摄氏度。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0029",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。下雨了。因此地面会湿。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0093",
+      "source": "LLM-Check (DeepMind)",
+      "text": "水的沸点是 100 摄氏度。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0086",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0064",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。如果 Q 则 R。因此如果 P 则 R。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0087",
+      "source": "Chain of Thought Hub",
+      "text": "问题：3 个苹果加 5 个苹果等于几个？\n思考：3+5=9。\n答案：9 个苹果",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "calculation_error",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0140",
+      "source": "LogicInference",
+      "text": "P→Q, ¬P, ∴¬Q",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_denying_antecedent",
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0096",
+      "source": "LLM-Check (DeepMind)",
+      "text": "所有猫都是哺乳动物。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0090",
+      "source": "LogicInference",
+      "text": "P→Q, ¬Q, ∴¬P",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0068",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面湿了。因此下雨了。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_affirming_consequent",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0103",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x>5 且 y>x，那么 y>5 吗？\n思考：x>5，y>x。但是 y 可能小于 5。\n答案：不一定。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "inconsistent_reasoning",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0040",
+      "source": "LLM-Check (DeepMind)",
+      "text": "中国的首都是北京。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0048",
+      "source": "LLM-Check (DeepMind)",
+      "text": "所有猫都是哺乳动物。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0005",
+      "source": "LLM-Check (DeepMind)",
+      "text": "地球是近似球形的。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0028",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：有些猫不怕水。咪咪可能不怕。\n答案：不一定。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "inconsistent_reasoning",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0149",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0071",
+      "source": "LLM-Check (DeepMind)",
+      "text": "中国的首都是北京。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0085",
+      "source": "LLM-Check (DeepMind)",
+      "text": "我总是错的。这句话也是错的。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0041",
+      "source": "LLM-Check (DeepMind)",
+      "text": "中国的首都是北京。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0016",
+      "source": "LLM-Check (DeepMind)",
+      "text": "吃这个药可以长生不老。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "unsupported_claim",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0013",
+      "source": "LLM-Check (DeepMind)",
+      "text": "美国的首都是华盛顿特区。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0051",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0006",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0031",
+      "source": "LLM-Check (DeepMind)",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0098",
+      "source": "LogicInference",
+      "text": "P→Q, ¬P, ∴¬Q",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_denying_antecedent",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0052",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0066",
+      "source": "LLM-Check (DeepMind)",
+      "text": "地球是近似球形的。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0014",
+      "source": "LogicInference",
+      "text": "如果 A 则 B。如果 B 则 C。因此如果 A 则 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0104",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有鸟都会飞。企鹅是鸟。企鹅会飞吗？\n思考：所有鸟都会飞。企鹅是鸟。因此企鹅会飞。\n答案：是的，企鹅会飞。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "logic_jump",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0147",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0110",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0146",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。Q 为假。因此 P 为假。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0074",
+      "source": "LLM-Check (DeepMind)",
+      "text": "美国的首都是华盛顿特区。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0020",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0118",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=15。\n答案：y=15",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "calculation_error",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0005",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0112",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0011",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0024",
+      "source": "LLM-Check (DeepMind)",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0019",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有 A 都是 B。所有 B 都是 C。所有 A 都是 C 吗？\n思考：所有 A 都是 C。\n答案：是的。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "missing_step",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0091",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0022",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。如果 Q 则 R。因此如果 P 则 R。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0144",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0129",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0033",
+      "source": "LLM-Check (DeepMind)",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0144",
+      "source": "LogicInference",
+      "text": "P→Q, Q→R, ∴P→R",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0128",
+      "source": "LogicInference",
+      "text": "P 或 Q。非 P。因此 Q。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0098",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0051",
+      "source": "LLM-Check (DeepMind)",
+      "text": "光速比声速快。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0045",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0075",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。Q 为假。因此 P 为假。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0018",
+      "source": "LLM-Check (DeepMind)",
+      "text": "明天一定会发生大地震。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "unsupported_claim",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0128",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0060",
+      "source": "LogicInference",
+      "text": "P→Q, Q→R, ∴P→R",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0042",
+      "source": "LLM-Check (DeepMind)",
+      "text": "光速比声速快。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0104",
+      "source": "LogicInference",
+      "text": "P→Q, Q→R, ∴P→R",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0075",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0066",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0043",
+      "source": "LLM-Check (DeepMind)",
+      "text": "光速比声速快。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0069",
+      "source": "LLM-Check (DeepMind)",
+      "text": "所有猫都是哺乳动物。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0047",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面没湿。因此没下雨。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0055",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0078",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=2，y=3x+1，z=2y-1，求 z 的值。\n思考：x=2，z=2y-1=2(3×2+1)-1=13。\n答案：z=13",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "missing_step",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0053",
+      "source": "Chain of Thought Hub",
+      "text": "问题：小明比小红高。小红比小刚高。谁最高？\n思考：假设小明最高。\n答案：小明最高。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "wrong_assumption",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0002",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0127",
+      "source": "LogicInference",
+      "text": "要么下雨要么晴天。没下雨。因此晴天。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0004",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0102",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有鸟都会飞。企鹅是鸟。企鹅会飞吗？\n思考：所有鸟都会飞。企鹅是鸟。因此企鹅会飞。\n答案：是的，企鹅会飞。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "logic_jump",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0057",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0012",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0017",
+      "source": "LLM-Check (DeepMind)",
+      "text": "中国的首都是北京。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0021",
+      "source": "LogicInference",
+      "text": "P→Q, Q, ∴P",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_affirming_consequent",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0135",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有鸟都会飞。企鹅是鸟。企鹅会飞吗？\n思考：所有鸟都会飞。企鹅是鸟。因此企鹅会飞。\n答案：是的，企鹅会飞。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "logic_jump",
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0067",
+      "source": "LLM-Check (DeepMind)",
+      "text": "水的沸点是 50 摄氏度。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "factual_error",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0002",
+      "source": "LogicInference",
+      "text": "P∨Q, ¬P, ∴Q",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0011",
+      "source": "LLM-Check (DeepMind)",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0123",
+      "source": "LogicInference",
+      "text": "如果 A 则 B。如果 B 则 C。因此如果 A 则 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0116",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。没下雨。因此地面不会湿。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_denying_antecedent",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0029",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0078",
+      "source": "LLM-Check (DeepMind)",
+      "text": "美国的首都是华盛顿特区。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0089",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0030",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0132",
+      "source": "Chain of Thought Hub",
+      "text": "问题：3 个苹果加 5 个苹果等于几个？\n思考：3+5=9。\n答案：9 个苹果",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "calculation_error",
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0081",
+      "source": "LLM-Check (DeepMind)",
+      "text": "水的沸点是 100 摄氏度。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0137",
+      "source": "LogicInference",
+      "text": "要么下雨要么晴天。没下雨。因此晴天。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0089",
+      "source": "LogicInference",
+      "text": "P→Q, P, ∴Q",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0107",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0088",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面没湿。因此没下雨。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0006",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0125",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0141",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。如果 Q 则 R。因此如果 P 则 R。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0020",
+      "source": "LogicInference",
+      "text": "P→Q, Q, ∴P",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_affirming_consequent",
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0073",
+      "source": "LLM-Check (DeepMind)",
+      "text": "所有猫都是哺乳动物。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0070",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0021",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0023",
+      "source": "LogicInference",
+      "text": "P→Q, ¬Q, ∴¬P",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0013",
+      "source": "Chain of Thought Hub",
+      "text": "问题：小明比小红高。小红比小刚高。谁最高？\n思考：假设小明最高。\n答案：小明最高。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "wrong_assumption",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0124",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。Q 为假。因此 P 为假。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0044",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。如果 Q 则 R。因此如果 P 则 R。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0041",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：有些猫不怕水。咪咪可能不怕。\n答案：不一定。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "inconsistent_reasoning",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0040",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0129",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0077",
+      "source": "LogicInference",
+      "text": "要么下雨要么晴天。没下雨。因此晴天。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0022",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0003",
+      "source": "LogicInference",
+      "text": "要么下雨要么晴天。没下雨。因此晴天。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0146",
+      "source": "Chain of Thought Hub",
+      "text": "问题：3 个苹果加 5 个苹果等于几个？\n思考：3+5=9。\n答案：9 个苹果",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "calculation_error",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0092",
+      "source": "LogicInference",
+      "text": "P→Q, ¬Q, ∴¬P",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0049",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面湿了。因此下雨了。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_affirming_consequent",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0084",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0035",
+      "source": "LogicInference",
+      "text": "P∨Q, ¬P, ∴Q",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0145",
+      "source": "LogicInference",
+      "text": "P→Q, Q→R, ∴P→R",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0040",
+      "source": "LogicInference",
+      "text": "要么下雨要么晴天。没下雨。因此晴天。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0081",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0025",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。下雨了。因此地面会湿。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0026",
+      "source": "LLM-Check (DeepMind)",
+      "text": "如果 x=5，那么 2x=10。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0065",
+      "source": "LogicInference",
+      "text": "P∨Q, ¬P, ∴Q",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0043",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。如果 Q 则 R。因此如果 P 则 R。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0032",
+      "source": "LLM-Check (DeepMind)",
+      "text": "地球是近似球形的。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0014",
+      "source": "LLM-Check (DeepMind)",
+      "text": "美国的首都是华盛顿特区。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0065",
+      "source": "LLM-Check (DeepMind)",
+      "text": "地球是近似球形的。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0073",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=15。\n答案：y=15",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "calculation_error",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0036",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=15。\n答案：y=15",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "calculation_error",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0062",
+      "source": "LLM-Check (DeepMind)",
+      "text": "我从来不说谎。我刚才说的是谎话。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "contradiction",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0074",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0126",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0004",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0136",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0027",
+      "source": "LLM-Check (DeepMind)",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0009",
+      "source": "LogicInference",
+      "text": "P→Q, P, ∴Q",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0140",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0093",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0015",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0137",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0099",
+      "source": "LLM-Check (DeepMind)",
+      "text": "所有猫都是哺乳动物。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0070",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面湿了。因此下雨了。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_affirming_consequent",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0116",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0143",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0034",
+      "source": "LLM-Check (DeepMind)",
+      "text": "吃这个药可以长生不老。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "unsupported_claim",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0039",
+      "source": "LogicInference",
+      "text": "P→Q, ¬Q, ∴¬P",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0007",
+      "source": "LLM-Check (DeepMind)",
+      "text": "水的沸点是 50 摄氏度。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "factual_error",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0030",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面没湿。因此没下雨。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0059",
+      "source": "LLM-Check (DeepMind)",
+      "text": "吃这个药可以长生不老。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "unsupported_claim",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0115",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有 A 都是 B。所有 B 都是 C。所有 A 都是 C 吗？\n思考：假设 A、B、C 是相同的。\n答案：是的。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "wrong_assumption",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0097",
+      "source": "LogicInference",
+      "text": "如果 A 则 B。如果 B 则 C。因此如果 A 则 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0080",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=2，y=3x+1，z=2y-1，求 z 的值。\n思考：x=2，z=2y-1=2(3×2+1)-1=13。\n答案：z=13",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "missing_step",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0109",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0110",
+      "source": "LogicInference",
+      "text": "P→Q, P, ∴Q",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0054",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0031",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。下雨了。因此地面会湿。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0010",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。如果 Q 则 R。因此如果 P 则 R。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0148",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0089",
+      "source": "LLM-Check (DeepMind)",
+      "text": "光速比声速慢。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "factual_error",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0067",
+      "source": "LogicInference",
+      "text": "P→Q, Q→R, ∴P→R",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0032",
+      "source": "LogicInference",
+      "text": "P→Q, ¬P, ∴¬Q",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_denying_antecedent",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0061",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为假。因此 Q 为假。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_denying_antecedent",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0063",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0019",
+      "source": "LogicInference",
+      "text": "P→Q, Q, ∴P",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_affirming_consequent",
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0077",
+      "source": "LLM-Check (DeepMind)",
+      "text": "水的沸点是 100 摄氏度。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0138",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0001",
+      "source": "LLM-Check (DeepMind)",
+      "text": "外星人明天会访问地球。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "unsupported_claim",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0031",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0135",
+      "source": "LogicInference",
+      "text": "P→Q, Q→R, ∴P→R",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0067",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0041",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。Q 为真。因此 P 为真。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_affirming_consequent",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0050",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有 A 都是 B。所有 B 都是 C。所有 A 都是 C 吗？\n思考：所有 A 都是 C。\n答案：是的。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "missing_step",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0072",
+      "source": "LogicInference",
+      "text": "如果 A 则 B。如果 B 则 C。因此如果 A 则 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0048",
+      "source": "Chain of Thought Hub",
+      "text": "问题：小明比小红高。小红比小刚高。谁最高？\n思考：假设小明最高。\n答案：小明最高。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "wrong_assumption",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0044",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0047",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0035",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0093",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面没湿。因此没下雨。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0079",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0042",
+      "source": "LogicInference",
+      "text": "P→Q, Q→R, ∴P→R",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0131",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0022",
+      "source": "LLM-Check (DeepMind)",
+      "text": "地球是近似球形的。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0061",
+      "source": "LLM-Check (DeepMind)",
+      "text": "所有猫都是哺乳动物。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0011",
+      "source": "LogicInference",
+      "text": "P 或 Q。非 P。因此 Q。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0049",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0063",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。下雨了。因此地面会湿。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0055",
+      "source": "LogicInference",
+      "text": "要么下雨要么晴天。没下雨。因此晴天。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0100",
+      "source": "LLM-Check (DeepMind)",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0024",
+      "source": "LogicInference",
+      "text": "P→Q, Q→R, ∴P→R",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0062",
+      "source": "LogicInference",
+      "text": "如果 A 则 B。如果 B 则 C。因此如果 A 则 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0117",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0075",
+      "source": "LLM-Check (DeepMind)",
+      "text": "如果 x=5，那么 2x=10。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0036",
+      "source": "LLM-Check (DeepMind)",
+      "text": "中国的首都是北京。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0111",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0133",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面没湿。因此没下雨。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0084",
+      "source": "LLM-Check (DeepMind)",
+      "text": "地球是近似球形的。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0051",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0071",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0010",
+      "source": "LLM-Check (DeepMind)",
+      "text": "中国的首都是北京。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0109",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面湿了。因此下雨了。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_affirming_consequent",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0083",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。如果 Q 则 R。因此如果 P 则 R。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0001",
+      "source": "LogicInference",
+      "text": "如果 A 则 B。如果 B 则 C。因此如果 A 则 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0122",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0006",
+      "source": "LLM-Check (DeepMind)",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "logical_fallacy",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0046",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面没湿。因此没下雨。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0017",
+      "source": "LogicInference",
+      "text": "如果 A 则 B。如果 B 则 C。因此如果 A 则 C。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0131",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0150",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。Q 为假。因此 P 为假。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0025",
+      "source": "LLM-Check (DeepMind)",
+      "text": "所有猫都是哺乳动物。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0020",
+      "source": "LLM-Check (DeepMind)",
+      "text": "地球是近似球形的。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0141",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0088",
+      "source": "LLM-Check (DeepMind)",
+      "text": "地球是近似球形的。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0034",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0076",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=15。\n答案：y=15",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "calculation_error",
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0012",
+      "source": "LLM-Check (DeepMind)",
+      "text": "他品行不好。所以他的观点肯定是错的。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "logical_fallacy",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0015",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为假。因此 Q 为假。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_denying_antecedent",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0042",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0038",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0078",
+      "source": "LogicInference",
+      "text": "P∨Q, ¬P, ∴Q",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0102",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0076",
+      "source": "LLM-Check (DeepMind)",
+      "text": "我总是错的。这句话也是错的。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "contradiction",
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0052",
+      "source": "LLM-Check (DeepMind)",
+      "text": "所有猫都是哺乳动物。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0069",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面没湿。因此没下雨。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0056",
+      "source": "LogicInference",
+      "text": "P→Q, Q→R, ∴P→R",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0096",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0032",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0016",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0030",
+      "source": "LLM-Check (DeepMind)",
+      "text": "光速比声速快。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0085",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。如果 Q 则 R。因此如果 P 则 R。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0005",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。Q 为假。因此 P 为假。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0117",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。没下雨。因此地面不会湿。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_denying_antecedent",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0038",
+      "source": "LLM-Check (DeepMind)",
+      "text": "中国的首都是北京。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "hallucination_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0023",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0015",
+      "source": "LLM-Check (DeepMind)",
+      "text": "中国的首都是上海。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "factual_error",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0114",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0108",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。没下雨。因此地面不会湿。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_denying_antecedent",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0082",
+      "source": "LogicInference",
+      "text": "P→Q, Q, ∴P",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "rule_type": "invalid_affirming_consequent",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0056",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=2，y=3x+1，z=2y-1，求 z 的值。\n思考：x=2，z=2y-1=2(3×2+1)-1=13。\n答案：z=13",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "missing_step",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0004",
+      "source": "LLM-Check (DeepMind)",
+      "text": "外星人明天会访问地球。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "unsupported_claim",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0113",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。下雨了。因此地面会湿。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0036",
+      "source": "LogicInference",
+      "text": "要么下雨要么晴天。没下雨。因此晴天。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "disjunctive_syllogism",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0080",
+      "source": "LogicInference",
+      "text": "P→Q, Q→R, ∴P→R",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0094",
+      "source": "LogicInference",
+      "text": "如果 P 则 Q。P 为真。因此 Q 为真。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0033",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有 A 都是 B。所有 B 都是 C。所有 A 都是 C 吗？\n思考：假设 A、B、C 是相同的。\n答案：是的。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "wrong_assumption",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0082",
+      "source": "LLM-Check (DeepMind)",
+      "text": "他品行不好。所以他的观点肯定是错的。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0059",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0120",
+      "source": "LogicInference",
+      "text": "P→Q, P, ∴Q",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "easy"
+    },
+    {
+      "id": "logicinf_0066",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。地面没湿。因此没下雨。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_tollens",
+      "difficulty": "easy"
+    },
+    {
+      "id": "llmcheck_0080",
+      "source": "LLM-Check (DeepMind)",
+      "text": "所有人都喜欢这个。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "exaggeration",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0065",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0027",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0136",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=15。\n答案：y=15",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "calculation_error",
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0090",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0009",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=15。\n答案：y=15",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "error_type": "calculation_error",
+      "difficulty": "hard"
+    },
+    {
+      "id": "logicinf_0016",
+      "source": "LogicInference",
+      "text": "如果下雨，地面会湿。下雨了。因此地面会湿。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "modus_ponens",
+      "difficulty": "hard"
+    },
+    {
+      "id": "llmcheck_0002",
+      "source": "LLM-Check (DeepMind)",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "logical_fallacy",
+      "difficulty": "easy"
+    },
+    {
+      "id": "cothub_0122",
+      "source": "Chain of Thought Hub",
+      "text": "问题：所有猫都怕水。咪咪是猫。咪咪怕水吗？\n思考：前提 1：所有猫都怕水。前提 2：咪咪是猫。结论：咪咪怕水。\n答案：是的，咪咪怕水。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "logicinf_0034",
+      "source": "LogicInference",
+      "text": "P→Q, Q→R, ∴P→R",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "rule_type": "hypothetical_syllogism",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0008",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果明天下雨，比赛取消。明天下雨了。比赛取消吗？\n思考：前提：如果 P 则 Q。P 为真。因此 Q 为真。\n答案：是的，比赛取消。",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "cothub_0068",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "hard"
+    },
+    {
+      "id": "cothub_0014",
+      "source": "Chain of Thought Hub",
+      "text": "问题：如果 x=5，y=2x+3，求 y 的值。\n思考：首先，x=5。然后，y=2×5+3=10+3=13。\n答案：y=13",
+      "label": "valid",
+      "category": "valid_reasoning",
+      "error_type": null,
+      "difficulty": "medium"
+    },
+    {
+      "id": "llmcheck_0039",
+      "source": "LLM-Check (DeepMind)",
+      "text": "水的沸点是 50 摄氏度。",
+      "label": "hallucination",
+      "category": "logical_fallacy",
+      "hallucination_type": "factual_error",
+      "difficulty": "hard"
+    }
+  ]
+}
