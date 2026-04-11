@@ -85,9 +85,10 @@ class LogicDetector:
         chain_analysis = self.chain_checker.check_completeness(text, reasoning_type)
         chain_score = chain_analysis.completeness_score
         
-        # 模块 3: 自洽性验证 (需要语言模型)
-        # TODO: 传入语言模型
-        consistency_score = 1.0  # 默认自洽
+        # 模块 3: 自洽性验证 (方案 A: 规则生成，无需大模型)
+        consistency_result = self.consistency_verifier.verify(text)
+        consistency_score = consistency_result.confidence
+        is_consistent = consistency_result.is_consistent
         
         # 模块 4: 事实检查
         factual_errors = self.fact_checker.get_factual_errors(text)
@@ -126,7 +127,7 @@ class LogicDetector:
             confidence=1.0 - overall_score,
             logic_fallacies=[f.fallacy_type.value for f in fallacies],
             completeness_score=chain_score,
-            is_consistent=consistency_score > 0.5,
+            is_consistent=is_consistent,
             factual_errors=[e.claim for e in factual_errors],
             explanation=explanation
         )

@@ -1,0 +1,5619 @@
+{
+  "total": 600,
+  "correct": 490,
+  "accuracy": 0.8166666666666667,
+  "precision": 0.8870967741935484,
+  "recall": 0.7857142857142857,
+  "f1": 0.8333333333333333,
+  "tp": 275,
+  "fp": 35,
+  "tn": 215,
+  "fn": 75,
+  "detailed_results": [
+    {
+      "id": "full_0001",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0002",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0003",
+      "text": "美国的首都是纽约",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0004",
+      "text": "推理过程包含诉诸权威谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0005",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0006",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0007",
+      "text": "推理过程包含人身攻击谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0008",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0009",
+      "text": "美国的首都是纽约",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0010",
+      "text": "光速比声速慢",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0011",
+      "text": "推理过程包含否定前件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0012",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0013",
+      "text": "推理过程包含肯定后件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0014",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0015",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0016",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0017",
+      "text": "他品行不好。所以他的观点肯定是错的。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0018",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误"
+      ]
+    },
+    {
+      "id": "full_0019",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0020",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0021",
+      "text": "光速比声速慢",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0022",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0023",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0024",
+      "text": "推理过程包含轻率概括谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0025",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0026",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0027",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0028",
+      "text": "地球是平的",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0029",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误",
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0030",
+      "text": "中国的首都是上海",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0031",
+      "text": "推理过程包含肯定后件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0032",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0033",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0034",
+      "text": "他品行不好。所以他的观点肯定是错的。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0035",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0036",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0037",
+      "text": "地球绕着太阳转。",
+      "true_label": "valid",
+      "pred_label": "hallucination",
+      "is_correct": false,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0038",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误"
+      ]
+    },
+    {
+      "id": "full_0039",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0040",
+      "text": "地球绕着太阳转。",
+      "true_label": "valid",
+      "pred_label": "hallucination",
+      "is_correct": false,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0041",
+      "text": "推理过程包含诉诸权威谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0042",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0043",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0044",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0045",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0046",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0047",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0048",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0049",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0050",
+      "text": "推理过程包含轻率概括谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0051",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0052",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误"
+      ]
+    },
+    {
+      "id": "full_0053",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0054",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0055",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误",
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0056",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0057",
+      "text": "推理过程包含诉诸权威谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0058",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0059",
+      "text": "推理过程包含肯定后件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0060",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0061",
+      "text": "水的沸点是 50 度",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0062",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0063",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误"
+      ]
+    },
+    {
+      "id": "full_0064",
+      "text": "推理过程包含诉诸权威谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0065",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0066",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0067",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0068",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0069",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0070",
+      "text": "地球绕着太阳转。",
+      "true_label": "valid",
+      "pred_label": "hallucination",
+      "is_correct": false,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0071",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0072",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0073",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0074",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0075",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0076",
+      "text": "地球绕着太阳转。",
+      "true_label": "valid",
+      "pred_label": "hallucination",
+      "is_correct": false,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0077",
+      "text": "地球绕着太阳转。",
+      "true_label": "valid",
+      "pred_label": "hallucination",
+      "is_correct": false,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0078",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0079",
+      "text": "推理过程包含肯定后件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0080",
+      "text": "推理过程包含轻率概括谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0081",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0082",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0083",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0084",
+      "text": "地球绕着太阳转。",
+      "true_label": "valid",
+      "pred_label": "hallucination",
+      "is_correct": false,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0085",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0086",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0087",
+      "text": "推理过程包含人身攻击谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0088",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0089",
+      "text": "推理过程包含人身攻击谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0090",
+      "text": "地球绕着太阳转。",
+      "true_label": "valid",
+      "pred_label": "hallucination",
+      "is_correct": false,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0091",
+      "text": "美国的首都是纽约",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0092",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0093",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0094",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0095",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0096",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误"
+      ]
+    },
+    {
+      "id": "full_0097",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误"
+      ]
+    },
+    {
+      "id": "full_0098",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误",
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0099",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误"
+      ]
+    },
+    {
+      "id": "full_0100",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0101",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0102",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0103",
+      "text": "地球是平的",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0104",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误",
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0105",
+      "text": "美国的首都是纽约",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0106",
+      "text": "推理过程包含虚假因果谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0107",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0108",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0109",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0110",
+      "text": "地球绕着太阳转。",
+      "true_label": "valid",
+      "pred_label": "hallucination",
+      "is_correct": false,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0111",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.5,
+      "fallacies": [
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0112",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误"
+      ]
+    },
+    {
+      "id": "full_0113",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0114",
+      "text": "水的沸点是 50 度",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0115",
+      "text": "推理过程包含人身攻击谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0116",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0117",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0118",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0119",
+      "text": "推理过程包含轻率概括谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0120",
+      "text": "推理过程包含诉诸权威谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0121",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0122",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0123",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0124",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0125",
+      "text": "推理过程包含肯定后件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0126",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0127",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0128",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0129",
+      "text": "中国的首都是上海",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0130",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误",
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0131",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.5,
+      "fallacies": [
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0132",
+      "text": "地球是平的",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0133",
+      "text": "美国的首都是纽约",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0134",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误",
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0135",
+      "text": "推理过程包含人身攻击谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0136",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0137",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0138",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.5,
+      "fallacies": [
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0139",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0140",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0141",
+      "text": "推理过程包含否定前件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0142",
+      "text": "推理过程包含虚假因果谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0143",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0144",
+      "text": "水的沸点是 50 度",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0145",
+      "text": "地球绕着太阳转。",
+      "true_label": "valid",
+      "pred_label": "hallucination",
+      "is_correct": false,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0146",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0147",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0148",
+      "text": "地球绕着太阳转。",
+      "true_label": "valid",
+      "pred_label": "hallucination",
+      "is_correct": false,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0149",
+      "text": "推理过程包含虚假因果谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0150",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误",
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0151",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误",
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0152",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0153",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0154",
+      "text": "地球绕着太阳转。",
+      "true_label": "valid",
+      "pred_label": "hallucination",
+      "is_correct": false,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0155",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0156",
+      "text": "美国的首都是纽约",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0157",
+      "text": "推理过程包含诉诸权威谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0158",
+      "text": "地球绕着太阳转。",
+      "true_label": "valid",
+      "pred_label": "hallucination",
+      "is_correct": false,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0159",
+      "text": "地球绕着太阳转。",
+      "true_label": "valid",
+      "pred_label": "hallucination",
+      "is_correct": false,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0160",
+      "text": "光速比声速慢",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0161",
+      "text": "推理过程包含肯定后件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0162",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0163",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0164",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0165",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误",
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0166",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0167",
+      "text": "推理过程包含轻率概括谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0168",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0169",
+      "text": "他品行不好。所以他的观点肯定是错的。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0170",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0171",
+      "text": "推理过程包含轻率概括谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0172",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0173",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0174",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0175",
+      "text": "推理过程包含虚假因果谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0176",
+      "text": "他品行不好。所以他的观点肯定是错的。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0177",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0178",
+      "text": "他品行不好。所以他的观点肯定是错的。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0179",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0180",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0181",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0182",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0183",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0184",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.5,
+      "fallacies": [
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0185",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0186",
+      "text": "地球绕着太阳转。",
+      "true_label": "valid",
+      "pred_label": "hallucination",
+      "is_correct": false,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0187",
+      "text": "水的沸点是 50 度",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0188",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0189",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0190",
+      "text": "推理过程包含肯定后件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0191",
+      "text": "推理过程包含否定前件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0192",
+      "text": "光速比声速慢",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0193",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0194",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0195",
+      "text": "推理过程包含虚假因果谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0196",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误",
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0197",
+      "text": "地球绕着太阳转。",
+      "true_label": "valid",
+      "pred_label": "hallucination",
+      "is_correct": false,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0198",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0199",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0200",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0201",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0202",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0203",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误"
+      ]
+    },
+    {
+      "id": "full_0204",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0205",
+      "text": "推理过程包含肯定后件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0206",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0207",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0208",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误"
+      ]
+    },
+    {
+      "id": "full_0209",
+      "text": "美国的首都是纽约",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0210",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0211",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0212",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0213",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0214",
+      "text": "推理过程包含否定前件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0215",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0216",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0217",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0218",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0219",
+      "text": "中国的首都是上海",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0220",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0221",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0222",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误"
+      ]
+    },
+    {
+      "id": "full_0223",
+      "text": "推理过程包含轻率概括谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0224",
+      "text": "地球绕着太阳转。",
+      "true_label": "valid",
+      "pred_label": "hallucination",
+      "is_correct": false,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0225",
+      "text": "地球绕着太阳转。",
+      "true_label": "valid",
+      "pred_label": "hallucination",
+      "is_correct": false,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0226",
+      "text": "推理过程包含诉诸权威谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0227",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误",
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0228",
+      "text": "推理过程包含否定前件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0229",
+      "text": "地球绕着太阳转。",
+      "true_label": "valid",
+      "pred_label": "hallucination",
+      "is_correct": false,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0230",
+      "text": "水的沸点是 50 度",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0231",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0232",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0233",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0234",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0235",
+      "text": "地球绕着太阳转。",
+      "true_label": "valid",
+      "pred_label": "hallucination",
+      "is_correct": false,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0236",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0237",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0238",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0239",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误",
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0240",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0241",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0242",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0243",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0244",
+      "text": "推理过程包含否定前件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0245",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0246",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0247",
+      "text": "推理过程包含轻率概括谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0248",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误",
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0249",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0250",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0251",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0252",
+      "text": "地球绕着太阳转。",
+      "true_label": "valid",
+      "pred_label": "hallucination",
+      "is_correct": false,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0253",
+      "text": "中国的首都是上海",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0254",
+      "text": "推理过程包含肯定后件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0255",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0256",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误",
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0257",
+      "text": "水的沸点是 50 度",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0258",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0259",
+      "text": "推理过程包含肯定后件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0260",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0261",
+      "text": "光速比声速慢",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0262",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0263",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0264",
+      "text": "地球是平的",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0265",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.5,
+      "fallacies": [
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0266",
+      "text": "他品行不好。所以他的观点肯定是错的。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0267",
+      "text": "推理过程包含肯定后件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0268",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0269",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0270",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0271",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.5,
+      "fallacies": [
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0272",
+      "text": "地球绕着太阳转。",
+      "true_label": "valid",
+      "pred_label": "hallucination",
+      "is_correct": false,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0273",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0274",
+      "text": "光速比声速慢",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0275",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0276",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0277",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0278",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0279",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0280",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0281",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.5,
+      "fallacies": [
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0282",
+      "text": "地球绕着太阳转。",
+      "true_label": "valid",
+      "pred_label": "hallucination",
+      "is_correct": false,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0283",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误",
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0284",
+      "text": "地球绕着太阳转。",
+      "true_label": "valid",
+      "pred_label": "hallucination",
+      "is_correct": false,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0285",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0286",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.5,
+      "fallacies": [
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0287",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误"
+      ]
+    },
+    {
+      "id": "full_0288",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误",
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0289",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0290",
+      "text": "地球绕着太阳转。",
+      "true_label": "valid",
+      "pred_label": "hallucination",
+      "is_correct": false,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0291",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0292",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0293",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误"
+      ]
+    },
+    {
+      "id": "full_0294",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误",
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0295",
+      "text": "推理过程包含肯定后件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0296",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0297",
+      "text": "推理过程包含轻率概括谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0298",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误"
+      ]
+    },
+    {
+      "id": "full_0299",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0300",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0301",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误"
+      ]
+    },
+    {
+      "id": "full_0302",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误"
+      ]
+    },
+    {
+      "id": "full_0303",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0304",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0305",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0306",
+      "text": "推理过程包含否定前件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0307",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0308",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0309",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0310",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0311",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0312",
+      "text": "水的沸点是 50 度",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0313",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0314",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0315",
+      "text": "他品行不好。所以他的观点肯定是错的。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0316",
+      "text": "地球绕着太阳转。",
+      "true_label": "valid",
+      "pred_label": "hallucination",
+      "is_correct": false,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0317",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0318",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误"
+      ]
+    },
+    {
+      "id": "full_0319",
+      "text": "推理过程包含轻率概括谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0320",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0321",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0322",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0323",
+      "text": "推理过程包含人身攻击谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0324",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误"
+      ]
+    },
+    {
+      "id": "full_0325",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0326",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0327",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0328",
+      "text": "推理过程包含诉诸权威谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0329",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0330",
+      "text": "推理过程包含虚假因果谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0331",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0332",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误"
+      ]
+    },
+    {
+      "id": "full_0333",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误",
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0334",
+      "text": "推理过程包含轻率概括谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0335",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0336",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0337",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0338",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0339",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0340",
+      "text": "美国的首都是纽约",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0341",
+      "text": "推理过程包含虚假因果谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0342",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0343",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0344",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.5,
+      "fallacies": [
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0345",
+      "text": "推理过程包含诉诸权威谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0346",
+      "text": "推理过程包含诉诸权威谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0347",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0348",
+      "text": "推理过程包含肯定后件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0349",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0350",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0351",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误",
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0352",
+      "text": "推理过程包含人身攻击谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0353",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0354",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误",
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0355",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0356",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0357",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0358",
+      "text": "地球绕着太阳转。",
+      "true_label": "valid",
+      "pred_label": "hallucination",
+      "is_correct": false,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0359",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0360",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0361",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0362",
+      "text": "推理过程包含肯定后件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0363",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0364",
+      "text": "推理过程包含人身攻击谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0365",
+      "text": "推理过程包含诉诸权威谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0366",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0367",
+      "text": "推理过程包含否定前件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0368",
+      "text": "推理过程包含诉诸权威谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0369",
+      "text": "推理过程包含轻率概括谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0370",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0371",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0372",
+      "text": "推理过程包含诉诸权威谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0373",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0374",
+      "text": "水的沸点是 50 度",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0375",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0376",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0377",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误",
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0378",
+      "text": "光速比声速慢",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0379",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0380",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0381",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0382",
+      "text": "推理过程包含肯定后件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0383",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0384",
+      "text": "推理过程包含否定前件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0385",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0386",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0387",
+      "text": "推理过程包含虚假因果谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0388",
+      "text": "推理过程包含肯定后件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0389",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0390",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0391",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0392",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0393",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0394",
+      "text": "他品行不好。所以他的观点肯定是错的。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0395",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0396",
+      "text": "推理过程包含否定前件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0397",
+      "text": "推理过程包含人身攻击谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0398",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0399",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0400",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0401",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误",
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0402",
+      "text": "光速比声速慢",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0403",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0404",
+      "text": "推理过程包含否定前件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0405",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误"
+      ]
+    },
+    {
+      "id": "full_0406",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误",
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0407",
+      "text": "地球绕着太阳转。",
+      "true_label": "valid",
+      "pred_label": "hallucination",
+      "is_correct": false,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0408",
+      "text": "推理过程包含肯定后件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0409",
+      "text": "推理过程包含轻率概括谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0410",
+      "text": "推理过程包含轻率概括谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0411",
+      "text": "推理过程包含诉诸权威谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0412",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0413",
+      "text": "水的沸点是 50 度",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0414",
+      "text": "推理过程包含肯定后件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0415",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0416",
+      "text": "光速比声速慢",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0417",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0418",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误",
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0419",
+      "text": "推理过程包含否定前件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0420",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0421",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0422",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误",
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0423",
+      "text": "推理过程包含否定前件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0424",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0425",
+      "text": "推理过程包含虚假因果谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0426",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0427",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误"
+      ]
+    },
+    {
+      "id": "full_0428",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0429",
+      "text": "推理过程包含诉诸权威谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0430",
+      "text": "美国的首都是纽约",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0431",
+      "text": "地球绕着太阳转。",
+      "true_label": "valid",
+      "pred_label": "hallucination",
+      "is_correct": false,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0432",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.5,
+      "fallacies": [
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0433",
+      "text": "推理过程包含否定前件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0434",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0435",
+      "text": "推理过程包含轻率概括谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0436",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0437",
+      "text": "中国的首都是上海",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0438",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0439",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.5,
+      "fallacies": [
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0440",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0441",
+      "text": "推理过程包含诉诸权威谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0442",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0443",
+      "text": "推理过程包含虚假因果谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0444",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0445",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误",
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0446",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0447",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0448",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误"
+      ]
+    },
+    {
+      "id": "full_0449",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0450",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0451",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0452",
+      "text": "推理过程包含轻率概括谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0453",
+      "text": "中国的首都是上海",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0454",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0455",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0456",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0457",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0458",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0459",
+      "text": "中国的首都是上海",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0460",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0461",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0462",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0463",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0464",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0465",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误"
+      ]
+    },
+    {
+      "id": "full_0466",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0467",
+      "text": "他品行不好。所以他的观点肯定是错的。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0468",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.5,
+      "fallacies": [
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0469",
+      "text": "光速比声速慢",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0470",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误",
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0471",
+      "text": "地球绕着太阳转。",
+      "true_label": "valid",
+      "pred_label": "hallucination",
+      "is_correct": false,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0472",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0473",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0474",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误"
+      ]
+    },
+    {
+      "id": "full_0475",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误",
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0476",
+      "text": "美国的首都是纽约",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0477",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0478",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0479",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0480",
+      "text": "他品行不好。所以他的观点肯定是错的。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0481",
+      "text": "地球是平的",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0482",
+      "text": "推理过程包含诉诸权威谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0483",
+      "text": "推理过程包含否定前件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0484",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0485",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0486",
+      "text": "推理过程包含否定前件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0487",
+      "text": "地球是平的",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0488",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0489",
+      "text": "中国的首都是上海",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0490",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0491",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0492",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0493",
+      "text": "水的沸点是 50 度",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0494",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0495",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0496",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0497",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误"
+      ]
+    },
+    {
+      "id": "full_0498",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.5,
+      "fallacies": [
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0499",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误"
+      ]
+    },
+    {
+      "id": "full_0500",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0501",
+      "text": "推理过程包含人身攻击谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0502",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误"
+      ]
+    },
+    {
+      "id": "full_0503",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误"
+      ]
+    },
+    {
+      "id": "full_0504",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误",
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0505",
+      "text": "地球绕着太阳转。",
+      "true_label": "valid",
+      "pred_label": "hallucination",
+      "is_correct": false,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0506",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0507",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0508",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0509",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0510",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0511",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0512",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误"
+      ]
+    },
+    {
+      "id": "full_0513",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0514",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0515",
+      "text": "水的沸点是 50 度",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0516",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.5,
+      "fallacies": [
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0517",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0518",
+      "text": "美国的首都是纽约",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0519",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误"
+      ]
+    },
+    {
+      "id": "full_0520",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误"
+      ]
+    },
+    {
+      "id": "full_0521",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0522",
+      "text": "地球是平的",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0523",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0524",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0525",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0526",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误",
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0527",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0528",
+      "text": "地球绕着太阳转。",
+      "true_label": "valid",
+      "pred_label": "hallucination",
+      "is_correct": false,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0529",
+      "text": "推理过程包含肯定后件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0530",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0531",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0532",
+      "text": "他品行不好。所以他的观点肯定是错的。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0533",
+      "text": "推理过程包含诉诸权威谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0534",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0535",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0536",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0537",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0538",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误"
+      ]
+    },
+    {
+      "id": "full_0539",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0540",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0541",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0542",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0543",
+      "text": "推理过程包含否定前件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0544",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0545",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0546",
+      "text": "推理过程包含诉诸权威谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0547",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误",
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0548",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0549",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0550",
+      "text": "光速比声速慢",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0551",
+      "text": "地球绕着太阳转。",
+      "true_label": "valid",
+      "pred_label": "hallucination",
+      "is_correct": false,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0552",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0553",
+      "text": "推理过程包含诉诸权威谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0554",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0555",
+      "text": "地球绕着太阳转。",
+      "true_label": "valid",
+      "pred_label": "hallucination",
+      "is_correct": false,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0556",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0557",
+      "text": "地球是平的",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0558",
+      "text": "他品行不好。所以他的观点肯定是错的。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0559",
+      "text": "推理过程包含人身攻击谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0560",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0561",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0562",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误",
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0563",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误",
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0564",
+      "text": "他品行不好。所以他的观点肯定是错的。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0565",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误"
+      ]
+    },
+    {
+      "id": "full_0566",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0567",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误"
+      ]
+    },
+    {
+      "id": "full_0568",
+      "text": "如果下雨，地面会湿。地面湿了。所以下雨了。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误"
+      ]
+    },
+    {
+      "id": "full_0569",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0570",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0571",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0572",
+      "text": "推理过程包含人身攻击谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0573",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0574",
+      "text": "地球绕着太阳转。",
+      "true_label": "valid",
+      "pred_label": "hallucination",
+      "is_correct": false,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0575",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0576",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0577",
+      "text": "推理过程包含轻率概括谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0578",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0579",
+      "text": "他品行不好。所以他的观点肯定是错的。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0580",
+      "text": "专家说这个药有效。所以它一定有效。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.5,
+      "fallacies": [
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0581",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0582",
+      "text": "所有 A 都是 B。所有 B 都是 C。因此所有 A 都是 C。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0583",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0584",
+      "text": "如果 x>5 且 y>x，那么 y>5。已知 x=6，y=7。因此 y>5。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0585",
+      "text": "地球绕着太阳转。",
+      "true_label": "valid",
+      "pred_label": "hallucination",
+      "is_correct": false,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0586",
+      "text": "推理过程包含人身攻击谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0587",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误",
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0588",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0589",
+      "text": "A 事件发生在 B 事件之前。所以 A 导致 B。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0590",
+      "text": "如果明天下雨，比赛取消。明天下雨。因此比赛取消。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0591",
+      "text": "推理过程包含否定前件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0592",
+      "text": "所有人都会死。苏格拉底是人。因此苏格拉底会死。",
+      "true_label": "valid",
+      "pred_label": "valid",
+      "is_correct": true,
+      "confidence": 1.1102230246251565e-16,
+      "fallacies": []
+    },
+    {
+      "id": "full_0593",
+      "text": "这个推理存在逻辑错误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0594",
+      "text": "我认识一个程序员，他很宅。所以所有程序员都很宅。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    },
+    {
+      "id": "full_0595",
+      "text": "中国的首都是上海",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0596",
+      "text": "推理过程包含人身攻击谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0597",
+      "text": "如果是科学家，就很聪明。这个人不是科学家。所以他不聪明。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.4,
+      "fallacies": [
+        "肯定后件谬误",
+        "诉诸权威"
+      ]
+    },
+    {
+      "id": "full_0598",
+      "text": "推理过程包含虚假因果谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0599",
+      "text": "推理过程包含肯定后件谬误。",
+      "true_label": "hallucination",
+      "pred_label": "hallucination",
+      "is_correct": true,
+      "confidence": 0.6666666666666667,
+      "fallacies": []
+    },
+    {
+      "id": "full_0600",
+      "text": "他品行不好。所以他的观点肯定是错的。",
+      "true_label": "hallucination",
+      "pred_label": "valid",
+      "is_correct": false,
+      "confidence": 0.09999999999999998,
+      "fallacies": []
+    }
+  ]
+}

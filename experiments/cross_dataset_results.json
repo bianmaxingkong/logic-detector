@@ -1,65 +1,62 @@
 {
-  "timestamp": "2026-04-08T23:10:18.120356",
-  "results": [
-    {
-      "dataset": "LogicDetector-Bench (主测试集)",
+  "experiment_time": "2026-04-09T08:11:45.956937",
+  "threshold": 0.35,
+  "datasets": {
+    "LogicDetector-Bench": {
       "total": 600,
-      "accuracy": 0.365,
-      "precision": 0.2753623188405797,
-      "recall": 0.054285714285714284,
-      "f1": 0.09069212410501194,
-      "time_seconds": 0.0019521713256835938,
-      "confusion_matrix": {
-        "true_positive": 19,
-        "true_negative": 200,
-        "false_positive": 50,
-        "false_negative": 331
-      }
+      "correct": 490,
+      "accuracy": 0.8166666666666667,
+      "precision": 0.8870967741935484,
+      "recall": 0.7857142857142857,
+      "f1": 0.8333333333333333,
+      "tp": 275,
+      "fp": 35,
+      "tn": 215,
+      "fn": 75,
+      "expected": 81.7,
+      "sample_limit": null
     },
-    {
-      "dataset": "LogiQA (完整集)",
+    "LogiQA (完整)": {
       "total": 8678,
-      "accuracy": 0.7105323807328877,
+      "correct": 5291,
+      "accuracy": 0.6097026964738419,
+      "precision": 0.422550052687039,
+      "recall": 0.2592951826705464,
+      "f1": 0.32137848126627927,
+      "tp": 802,
+      "fp": 1096,
+      "tn": 4489,
+      "fn": 2291,
+      "expected": 80.0,
+      "sample_limit": null
+    },
+    "CoT-Hub (抽样)": {
+      "total": 500,
+      "correct": 372,
+      "accuracy": 0.744,
       "precision": 1.0,
-      "recall": 0.18784351762043325,
-      "f1": 0.3162765378334241,
-      "time_seconds": 0.026251554489135742,
-      "confusion_matrix": {
-        "true_positive": 581,
-        "true_negative": 5585,
-        "false_positive": 0,
-        "false_negative": 2512
-      }
+      "recall": 0.09219858156028368,
+      "f1": 0.1688311688311688,
+      "tp": 13,
+      "fp": 0,
+      "tn": 359,
+      "fn": 128,
+      "expected": 80.0,
+      "sample_limit": 500
     },
-    {
-      "dataset": "CoT-Hub (抽样)",
+    "LogicInference (抽样)": {
       "total": 500,
-      "accuracy": 0.692,
-      "precision": 0,
-      "recall": 0.0,
-      "f1": 0,
-      "time_seconds": 0.0014574527740478516,
-      "confusion_matrix": {
-        "true_positive": 0,
-        "true_negative": 346,
-        "false_positive": 0,
-        "false_negative": 154
-      }
-    },
-    {
-      "dataset": "LogicInference (抽样)",
-      "total": 500,
-      "accuracy": 0.818,
-      "precision": 0,
-      "recall": 0.0,
-      "f1": 0,
-      "time_seconds": 0.0013356208801269531,
-      "confusion_matrix": {
-        "true_positive": 0,
-        "true_negative": 409,
-        "false_positive": 0,
-        "false_negative": 91
-      }
+      "correct": 326,
+      "accuracy": 0.652,
+      "precision": 0.19402985074626866,
+      "recall": 0.2826086956521739,
+      "f1": 0.23008849557522124,
+      "tp": 26,
+      "fp": 108,
+      "tn": 300,
+      "fn": 66,
+      "expected": 80.0,
+      "sample_limit": 500
     }
-  ]
+  }
 }

@@ -1,0 +1,14 @@
+{
+  "total": 1500,
+  "correct": 1102,
+  "accuracy": 0.7346666666666667,
+  "precision": 0.7379912663755459,
+  "recall": 0.5487012987012987,
+  "f1": 0.6294227188081937,
+  "tp": 338,
+  "fp": 120,
+  "tn": 764,
+  "fn": 278,
+  "dataset": "LogicDetector-Bench Extended (1,500)",
+  "previous": "81.7% (600 条)"
+}
