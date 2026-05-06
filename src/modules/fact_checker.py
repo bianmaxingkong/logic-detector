@@ -1,240 +1,221 @@
 """
-模块 4: 事实检查器 (Fact Checker)
+模块 4: 事实检查器 (Fact Checker) — 基于 CFEVER 知识库 + FAISS 检索
 
-针对常识知识库验证声明
+对输入文本中的事实性声明，通过 CFEVER 知识库进行验证。
+使用 bge-small-zh-v1.5 嵌入 + FAISS 搜索，找最相似的知识条目。
 
-知识库:
-- 25+ 常识事实 (地理、物理、生物)
-- 模式匹配 + 命名实体识别
-- 准确率：85% (知识范围内)
+支持的标签：
+- supports  → 输入中的声明与事实一致（正确）
+- refutes   → 输入中的声明与事实矛盾（错误 = 幻觉）
 
-优势:
+核心逻辑：
+1. 提取输入文本中的事实性声明
+2. 对每个声明：嵌入 → FAISS 搜索 top-k
+3. 如果最佳 refutes 匹配 > 阈值 且 > 最佳 supports 匹配 → 事实错误
+4. 如果最佳 supports 匹配 > 阈值 → 事实正确（跳过）
+5. 否则 → 无法判断
+
+优势：
 - 完全离线运行
-- 内存占用 <50MB
-- 适合隐私敏感环境
+- 内存占用 <200MB (含嵌入模型)
+- 单条延迟 ~10ms
+
+知识库来源: CFEVER (Chinese Fact Extraction and VERification) — AAAI-24
 """
 
-import re
-from typing import List, Dict, Tuple, Optional, Set
+import re, pickle
+from pathlib import Path
+from typing import List, Optional
 from dataclasses import dataclass
+
+import numpy as np
+import faiss
+from sentence_transformers import SentenceTransformer
 
 
 @dataclass
-class FactCheck:
-    """事实检查结果"""
-    claim: str  # 声明
-    is_true: Optional[bool]  # 是否真实 (None 表示无法判断)
-    confidence: float  # 置信度
-    evidence: str  # 证据
-    source: str  # 来源
+class FactError:
+    """事实错误记录"""
+    claim: str            # 输入中的原声名
+    matched_claim: str    # KB 中匹配的 refutes 条目
+    similarity: float     # 余弦相似度
+    label: str = 'refutes'  # 固定为 refutes
 
 
 class FactChecker:
-    """事实检查器"""
-    
-    def __init__(self):
-        # 加载常识知识库 (25+ 事实)
-        self.knowledge_base = self._load_knowledge_base()
-        # 加载命名实体识别器
-        self.ner_model = self._load_ner_model()
-    
-    def _load_knowledge_base(self) -> Dict[str, Dict]:
-        """加载常识知识库"""
-        return {
-            # 地理事实
-            "中国的首都是北京": {
-                "category": "geography",
-                "truth_value": True,
-                "confidence": 0.99,
-            },
-            "美国的首都是纽约": {
-                "category": "geography",
-                "truth_value": False,
-                "confidence": 0.99,
-                "correction": "美国的首都是华盛顿特区",
-            },
-            "地球是平的": {
-                "category": "geography",
-                "truth_value": False,
-                "confidence": 0.99,
-                "correction": "地球是近似球形的",
-            },
-            "太平洋是世界上最大的洋": {
-                "category": "geography",
-                "truth_value": True,
-                "confidence": 0.95,
-            },
-            
-            # 物理事实
-            "水的沸点是 100 摄氏度": {
-                "category": "physics",
-                "truth_value": True,
-                "confidence": 0.95,
-                "note": "在海平面标准大气压下",
-            },
-            "光速比声速慢": {
-                "category": "physics",
-                "truth_value": False,
-                "confidence": 0.99,
-                "correction": "光速比声速快得多",
-            },
-            "重力加速度约为 9.8 m/s²": {
-                "category": "physics",
-                "truth_value": True,
-                "confidence": 0.95,
-            },
-            
-            # 生物事实
-            "人类有 206 块骨头": {
-                "category": "biology",
-                "truth_value": True,
-                "confidence": 0.90,
-            },
-            "植物不需要阳光": {
-                "category": "biology",
-                "truth_value": False,
-                "confidence": 0.99,
-                "correction": "植物需要阳光进行光合作用",
-            },
-            "DNA 是遗传物质": {
-                "category": "biology",
-                "truth_value": True,
-                "confidence": 0.99,
-            },
-            
-            # 历史事实
-            "第二次世界大战结束于 1945 年": {
-                "category": "history",
-                "truth_value": True,
-                "confidence": 0.99,
-            },
-            "中国有 5000 年文明史": {
-                "category": "history",
-                "truth_value": True,
-                "confidence": 0.90,
-            },
-            
-            # 科学事实
-            "地球围绕太阳转": {
-                "category": "science",
-                "truth_value": True,
-                "confidence": 0.99,
-            },
-            "月亮自己发光": {
-                "category": "science",
-                "truth_value": False,
-                "confidence": 0.99,
-                "correction": "月亮反射太阳光",
-            },
-        }
-    
-    def _load_ner_model(self):
-        """加载命名实体识别模型"""
-        # TODO: 加载轻量级 NER 模型
-        return None
-    
-    def _extract_claims(self, text: str) -> List[str]:
-        """从文本中提取声明"""
-        # 简单实现：按句号分割
-        claims = []
-        sentences = re.split(r'[。.!?]', text)
-        for sentence in sentences:
-            sentence = sentence.strip()
-            if len(sentence) >= 5:  # 忽略太短的句子
-                claims.append(sentence)
-        return claims
-    
-    def _normalize_claim(self, claim: str) -> str:
-        """标准化声明"""
-        # 转换为小写，去除多余空格
-        normalized = claim.lower().strip()
-        normalized = re.sub(r'\s+', ' ', normalized)
-        return normalized
-    
-    def check(self, text: str) -> List[FactCheck]:
+    """
+    基于 CFEVER + FAISS 的事实检查器
+    """
+
+    def __init__(self, threshold: float = 0.70, top_k: int = 5):
         """
-        检查文本中的事实
-        
         Args:
-            text: 待检查的文本
-            
-        Returns:
-            事实检查结果列表
+            threshold: 相似度阈值（默认 0.70，经验值）
+            top_k: 搜索候选项数
         """
-        # 提取声明
+        self.threshold = threshold
+        self.top_k = top_k
+
+        # 定位索引文件
+        index_dir = Path(__file__).parent.parent.parent / "data" / "cfever_index"
+        faiss_path = index_dir / "cfever_index.faiss"
+        meta_path = index_dir / "cfever_meta.pkl"
+
+        if not faiss_path.exists() or not meta_path.exists():
+            raise FileNotFoundError(
+                f"CFEVER 索引未找到！请先运行 scripts/build_cfever_index.py\n"
+                f"  期望位置: {faiss_path}"
+            )
+
+        # 加载元数据
+        with open(meta_path, 'rb') as f:
+            self.meta = pickle.load(f)
+        self.claims = self.meta['claims']
+        self.labels = self.meta['labels']
+        print(f"  [FactChecker] 加载 CFEVER 知识库: {len(self.claims)} 条 "
+              f"({self.meta['num_supports']} supports + {self.meta['num_refutes']} refutes)")
+
+        # 加载 FAISS 索引
+        self.index = faiss.read_index(str(faiss_path))
+        print(f"  [FactChecker] FAISS 索引已加载 ({self.index.ntotal} 条)")
+
+        # 加载嵌入模型
+        self.embedder = SentenceTransformer("BAAI/bge-small-zh-v1.5")
+        print(f"  [FactChecker] 嵌入模型已加载 (dim={self.meta['embed_dim']})")
+
+    # ------------------------------------------------------------------
+    # 公共接口
+    # ------------------------------------------------------------------
+
+    def get_factual_errors(self, text: str) -> List[FactError]:
+        """
+        检查文本中的事实性错误
+
+        Args:
+            text: 待检测文本
+
+        Returns:
+            FactError 列表（空 = 无检测到的错误）
+        """
         claims = self._extract_claims(text)
-        
-        results = []
+        if not claims:
+            return []
+
+        errors = []
         for claim in claims:
-            # 标准化声明
-            normalized = self._normalize_claim(claim)
-            
-            # 在知识库中查找
-            fact_info = self._lookup_knowledge_base(normalized)
-            
-            if fact_info:
-                result = FactCheck(
-                    claim=claim,
-                    is_true=fact_info["truth_value"],
-                    confidence=fact_info["confidence"],
-                    evidence=fact_info.get("correction", ""),
-                    source="LogicDetector Knowledge Base"
-                )
-                results.append(result)
-            else:
-                # 知识库中没有，标记为无法判断
-                result = FactCheck(
-                    claim=claim,
-                    is_true=None,
-                    confidence=0.5,
-                    evidence="知识库中无此事实",
-                    source="Unknown"
-                )
-                results.append(result)
-        
-        return results
-    
-    def _lookup_knowledge_base(self, normalized_claim: str) -> Optional[Dict]:
-        """在知识库中查找声明"""
-        # 精确匹配
-        if normalized_claim in self.knowledge_base:
-            return self.knowledge_base[normalized_claim]
-        
-        # 模糊匹配 - 降低阈值到 0.6
-        for kb_claim, info in self.knowledge_base.items():
-            similarity = self._semantic_similarity(normalized_claim, kb_claim)
-            if similarity > 0.6:
-                return info
-        
-        # 关键词匹配
-        keywords = ['首都', '沸点', '光速', '重力', '骨头', 'DNA', '地球', '太阳', '月亮']
-        for keyword in keywords:
-            if keyword in normalized_claim:
-                for kb_claim, info in self.knowledge_base.items():
-                    if keyword in kb_claim:
-                        return info
-        
+            error = self._verify_claim(claim)
+            if error is not None:
+                errors.append(error)
+
+        return errors
+
+    def get_fact_confirmation(self, text: str, threshold: Optional[float] = None) -> bool:
+        """
+        检查文本中是否有被知识库确认为正确的声明
+
+        反向信号：即使 chain 评分低，如果事实被确认正确，也应放行
+
+        Args:
+            text: 待检测文本
+            threshold: 相似度阈值（默认使用 self.threshold）
+
+        Returns:
+            True 如果有至少一个声明的 supports 匹配 > 阈值（事实被确认）
+        """
+        thresh = threshold if threshold is not None else 0.85
+        claims = self._extract_claims(text)
+        if not claims:
+            return False
+
+        for claim in claims:
+            emb = self.embedder.encode([claim], normalize_embeddings=True).astype(np.float32)
+            scores, idxs = self.index.search(emb, self.top_k)
+
+            best_supports = 0.0
+            best_refutes = 0.0
+            for j in range(len(scores[0])):
+                idx = idxs[0][j]
+                sim = float(scores[0][j])
+                label = self.labels[idx]
+                if label == 'supports' and sim > best_supports:
+                    best_supports = sim
+                elif label == 'refutes' and sim > best_refutes:
+                    best_refutes = sim
+
+            # 事实被确认：supports 匹配超过阈值且强于 refutes
+            if best_supports >= thresh and best_supports > best_refutes:
+                return True
+
+        return False
+
+    # ------------------------------------------------------------------
+    # 声明提取
+    # ------------------------------------------------------------------
+
+    def _extract_claims(self, text: str) -> List[str]:
+        """从推理文本中提取事实性声明"""
+        sentences = re.split(r'[。！？\n]', text)
+        claims = []
+
+        for sent in sentences:
+            sent = sent.strip()
+            if not sent or len(sent) < 5:
+                continue
+            if '?' in sent or '？' in sent:
+                continue
+            if re.match(r'^(如果|假设|若|要是|假如)', sent):
+                continue
+            skip_pats = [r'^(这|那|它|他|她)', r'如何|怎样|为什么|多少', r'请|帮我|回答']
+            if any(re.match(p, sent) for p in skip_pats):
+                continue
+            claims.append(sent)
+
+        return claims
+
+    # ------------------------------------------------------------------
+    # 声明验证：核心逻辑
+    # ------------------------------------------------------------------
+
+    def _verify_claim(self, claim: str) -> Optional[FactError]:
+        """
+        验证单个声明
+
+        逻辑：
+          FAISS 搜索 top-k 个最近邻
+          找到最佳 supports 匹配分数 S 和最佳 refutes 匹配分数 R
+          
+          规则：
+          - R ≥ threshold 且 R > S → 事实错误（返回 FactError）
+          - S ≥ threshold 且 S ≥ R → 事实正确（返回 None）
+          - 其他 → 无法判断（返回 None）
+
+        Returns:
+            FactError 若检测到错误，否则 None
+        """
+        emb = self.embedder.encode([claim], normalize_embeddings=True).astype(np.float32)
+        scores, idxs = self.index.search(emb, self.top_k)
+
+        best_supports = 0.0
+        best_refutes = 0.0
+        best_refutes_idx = -1
+
+        for j in range(len(scores[0])):
+            idx = idxs[0][j]
+            sim = float(scores[0][j])
+            label = self.labels[idx]
+
+            if label == 'supports' and sim > best_supports:
+                best_supports = sim
+            elif label == 'refutes' and sim > best_refutes:
+                best_refutes = sim
+                best_refutes_idx = idx
+
+        # 判断逻辑：refutes 匹配强于 supports → 事实错误
+        if best_refutes >= self.threshold and best_refutes > best_supports:
+            return FactError(
+                claim=claim,
+                matched_claim=self.claims[best_refutes_idx],
+                similarity=best_refutes,
+            )
+
         return None
-    
-    def _semantic_similarity(self, text1: str, text2: str) -> float:
-        """计算语义相似度"""
-        # TODO: 实现真正的语义相似度计算
-        # 目前使用简单的字符串相似度
-        from difflib import SequenceMatcher
-        return SequenceMatcher(None, text1, text2).ratio()
-    
-    def has_factual_error(self, text: str) -> bool:
-        """检查文本是否包含事实错误"""
-        results = self.check(text)
-        return any(r.is_true is False for r in results)
-    
-    def get_factual_errors(self, text: str) -> List[FactCheck]:
-        """获取所有事实错误"""
-        results = self.check(text)
-        return [r for r in results if r.is_true is False]
-    
-    def get_accuracy_on_test_set(self) -> float:
-        """在测试集上的准确率"""
-        # TODO: 加载测试集并计算准确率
-        # 论文中报告：85% 准确率 (知识范围内)
-        return 0.85

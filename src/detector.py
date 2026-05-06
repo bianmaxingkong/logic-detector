@@ -42,19 +42,22 @@ class LogicDetector:
     4. 事实检查器 (权重：0.1)
     """
     
-    def __init__(self, threshold: float = 0.35):
+    def __init__(self, threshold: float = 0.35, m3_threshold: float = 0.35, chain_checker_model: str = "BAAI/bge-small-zh-v1.5"):
         """
         初始化检测器
         
         Args:
             threshold: 幻觉判定阈值 (默认 0.35，优化后)
+            m3_threshold: M3 自洽判定阈值 (默认 0.35)
+            chain_checker_model: ChainChecker 使用的句向量模型 (默认 BAAI/bge-small-zh-v1.5)
         """
         self.threshold = threshold
+        self.m3_threshold = m3_threshold
         
         # 初始化四大模块
         self.logic_validator = LogicValidator()
-        self.chain_checker = ChainChecker()
-        self.consistency_verifier = ConsistencyVerifier(n_samples=5)
+        self.chain_checker = ChainChecker(model_name=chain_checker_model)
+        self.consistency_verifier = ConsistencyVerifier(n_samples=5, threshold=m3_threshold)
         self.fact_checker = FactChecker()
         
         # 模块权重 (基于消融实验)
@@ -94,26 +97,40 @@ class LogicDetector:
         factual_errors = self.fact_checker.get_factual_errors(text)
         has_factual_error = len(factual_errors) > 0
         fact_score = 0.0 if has_factual_error else 1.0  # 有错误直接 0 分
-        
-        # 多模块融合 (优化策略：模块 2 主导 + 其他模块 veto 权)
-        # 基于消融实验：模块 2 单独 75.5%，其他模块约 57%
-        # 策略：以模块 2 为主，其他模块只负责检出明确错误
-        
-        # 如果模块 2 判定不完整 (得分<0.5)，直接判定为幻觉
-        if chain_score < 0.5:
+
+        # 事实确认信号：查询 KB 中是否有强 supports 匹配
+        # 当文本是简短事实陈述（无推理链）时，用于反向纠正 chain 误判
+        has_confirmed_fact = self.fact_checker.get_fact_confirmation(text)
+
+        # 多模块融合 (优化策略：模块 2 主导 + 其他模块 veto/confirmation 权)
+        # 策略：chain 主导，其他模块提供双向信号
+
+        # 计算加权评分（M3 一致性惩罚）
+        effective_consistency = consistency_score
+        if not is_consistent:
+            effective_consistency = consistency_score * 0.5
+
+        overall_score = (
+            self.weights["logic"] * logic_score +
+            self.weights["chain"] * chain_score +
+            self.weights["consistency"] * effective_consistency +
+            self.weights["fact"] * fact_score
+        )
+
+        # 决策逻辑：双重信号
+        # 1. chain 不完整 → 默认为幻觉
+        # 2. 但若事实被确认 → 放行（用加权评分）
+        if chain_score < 0.5 and not has_confirmed_fact:
             is_hallucination = True
             overall_score = chain_score
-        # 否则，使用加权平均，但模块 2 权重更高
-        else:
-            overall_score = (
-                self.weights["logic"] * logic_score +
-                self.weights["chain"] * chain_score +
-                self.weights["consistency"] * consistency_score +
-                self.weights["fact"] * fact_score
-            )
+        elif chain_score < 0.5 and has_confirmed_fact:
+            # 简短事实陈述：事实已被 KB 确认，使用加权评分而非硬 veto
             is_hallucination = (overall_score < self.threshold)
-        
-        # 一票否决：有明确谬误或事实错误，直接判定为幻觉
+        else:
+            # chain 完整，使用加权评分
+            is_hallucination = (overall_score < self.threshold)
+
+        # 一票否决：有明确谬误或事实错误 → 无条件幻觉
         if has_fallacy or has_factual_error:
             is_hallucination = True
         
