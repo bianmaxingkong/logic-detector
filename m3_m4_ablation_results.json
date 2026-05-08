@@ -1,0 +1,65 @@
+{
+  "ablation_results": [
+    {
+      "config": "Full Model (M1+M2+M3+M4)",
+      "accuracy": 0.9211,
+      "precision": 1.0,
+      "recall": 0.7785,
+      "f1": 0.8755,
+      "tp": 2408,
+      "tn": 5585,
+      "fp": 0,
+      "fn": 685,
+      "total_time_s": 596.21
+    },
+    {
+      "config": "Without M3 (no ConsistencyVerifier)",
+      "accuracy": 0.9211,
+      "precision": 1.0,
+      "recall": 0.7785,
+      "f1": 0.8755,
+      "tp": 2408,
+      "tn": 5585,
+      "fp": 0,
+      "fn": 685,
+      "total_time_s": 529.29
+    },
+    {
+      "config": "Without M4 (no FactChecker)",
+      "accuracy": 0.9211,
+      "precision": 1.0,
+      "recall": 0.7785,
+      "f1": 0.8755,
+      "tp": 2408,
+      "tn": 5585,
+      "fp": 0,
+      "fn": 685,
+      "total_time_s": 372.77
+    },
+    {
+      "config": "Without M3+M4 (M1+M2 only)",
+      "accuracy": 0.9211,
+      "precision": 1.0,
+      "recall": 0.7785,
+      "f1": 0.8755,
+      "tp": 2408,
+      "tn": 5585,
+      "fp": 0,
+      "fn": 685,
+      "total_time_s": 272.11
+    }
+  ],
+  "baseline": {
+    "config": "Full Model (M1+M2+M3+M4)",
+    "accuracy": 0.9211,
+    "precision": 1.0,
+    "recall": 0.7785,
+    "f1": 0.8755,
+    "tp": 2408,
+    "tn": 5585,
+    "fp": 0,
+    "fn": 685,
+    "total_time_s": 596.21
+  },
+  "test_set": "test_set_logiqa_full_8678.json"
+}

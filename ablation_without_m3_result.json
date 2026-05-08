@@ -1,0 +1,12 @@
+{
+  "config": "Without M3 (no ConsistencyVerifier)",
+  "accuracy": 0.9211,
+  "precision": 1.0,
+  "recall": 0.7785,
+  "f1": 0.8755,
+  "tp": 2408,
+  "tn": 5585,
+  "fp": 0,
+  "fn": 685,
+  "total_time_s": 560.91
+}
