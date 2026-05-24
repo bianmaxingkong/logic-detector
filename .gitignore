@@ -35,3 +35,6 @@ build/
 Thumbs.db
 benchmarks/results/
 config/llm_config.json
+
+# LaTeX source (kept private in separate repo)
+/latex/
